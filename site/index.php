@@ -19,10 +19,38 @@
 
         <p class="p2 bow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae tellus vulputate lacinia. Nullam mattis sagittis orci, ac varius lorem varius non. Integer cursus semper venenatis. Curabitur nibh lorem, scelerisque quis aliquam quis, sagittis non nisi. Nunc nulla metus, semper vitae nunc vel, pretium bibendum purus. Sed eget ligula quis mi faucibus faucibus a eget lectus. Fusce consequat massa a tortor ultrices, et sodales mauris malesuada. Vestibulum dolor ante, aliquet sit amet ligula sed, egestas placerat felis. In ullamcorper erat eu mollis semper. Praesent tortor risus, eleifend id gravida ut, mollis congue justo. Quisque consectetur nibh id egestas sollicitudin.</p>
 
+        <div class="row">
+            <div class="col-4">
+                <div class="fiche">
+                    <div class="photo"></div>
+                    <div class="nom">Jean-Michel</div>
+                    <div class="job">Consultant</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="fiche">
+                    <div class="photo"></div>
+                    <div class="nom">Pierre</div>
+                    <div class="job">Graphiste</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="fiche">
+                    <div class="photo"></div>
+                    <div class="nom">Luc</div>
+                    <div class="job">Chef de Projet</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="floaty">
         <button class="changeSize decrease">Font -</button><button class="changeSize increase">Font +</button>
         <br><br>
         <button class="visual">Troubles visuels</button>
     </div>
+
+
     <script src="assets/js/script.js"></script>
 </body>
 
