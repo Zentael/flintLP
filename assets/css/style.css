@@ -1,0 +1,55 @@
+/***
+HEADER
+***/
+header{
+    background-color: lightgrey;
+}
+
+/***
+ABOUT US
+***/
+#about-us{
+    background-color: lightblue;
+}
+
+/***
+ABOUT US
+***/
+#test-quota{
+    background-color: lightpink;
+}
+#test-quota img{
+    max-width: 100%;
+}
+
+/***
+ABOUT US
+***/
+#conversion{
+    background-color: antiquewhite;
+}
+
+/***
+TEMOIGNAGE
+***/
+#temoignages{
+    background-color: #edffbc;
+}
+
+/***
+FOOTER
+***/
+footer{
+    background-color: lightgrey;
+}
+
+/***
+PARTAGE RS
+***/
+#share-buttons img {
+    width: 45px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+}
