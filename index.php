@@ -11,8 +11,14 @@
         <link href="assets/css/style.css" rel="stylesheet">
         <link rel="icon" href="assets/img/logo.ico">
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -20,79 +26,94 @@
             <h1>Handi-cape</h1>
         </header>
 
-        <div id="about-us" class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h2>Les héros de votre entreprise</h2>
-                    <p> Handi-cape est une plateforme de mise en relation entre les recruteurs et les personnes handicapés…. se baser sur le texte de la vidéo typo. Parler d’accessibilité. teaser</p>
-                    <button>M'informer de la sortie du site</button>
+        <main>
+            <section id="about-us" class="container">
+                <div class="row">
+                    <article class="col-sm-6">
+                        <h2>Les héros de votre entreprise</h2>
+                        <p> Handi-cape est une plateforme de mise en relation entre les recruteurs et les personnes handicapés…. se baser sur le texte de la vidéo typo. Parler d’accessibilité. teaser</p>
+                        <button>M'informer de la sortie du site</button>
+                    </article>
+                    <article class="col-sm-6"></article>
                 </div>
-                <div class="col-6"></div>
-            </div>
-        </div>
+            </section>
 
-        <div id="test-quota" class="container">
-            <h2>Est-ce que votre entreprise respecte les quotas ?</h2>
-            <div class="row">
-                <div class="col-6">
-                    <label for="effectif">Nombre de personnes dans votre entreprise ?</label>
-                    <input type="text" id="effectif">
-                    <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
-                    <input type="text" id="handicap">
-                    <button>Faire le test</button>
+            <section id="test-quota" class="container">
+                <h2>Est-ce que votre entreprise respecte les quotas ?</h2>
+                <div class="row">
+                    <article class="col-sm-6">
+                        <label for="effectif">Nombre de personnes dans votre entreprise ?</label>
+                        <input type="text" id="effectif">
+                        <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
+                        <input type="text" id="handicap">
+                        <button id="calculQuota">Faire le test</button>
+                    </article>
+                    <article class="col-sm-6">
+                        <p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>
+                        <img src="assets/img/no.jpg" alt="Vous êtes en dessous des quotas">
+                    </article>
                 </div>
-                <div class="col-6">
-                    <img src="assets/img/no.jpg" alt="Vous êtes en dessous des quotas">
+            </section>
+
+            <section id="conversion" class="container">
+                <h2>Ne ratez pas la sortie de la plateforme handi-cape</h2>
+                <p>Vous voulez jouer un rôle dans cette révolution ? Partagez le lien et rejoignez nous sur les réseaux sociaux.</p>
+                <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données par la suite.
+                </p>
+                <form action="" method="POST">
+                    <input type="email" placeholder="Votre adresse email">
+                    <input type="submit" value="Je souhaite être informé">
+                </form>
+
+                <h2>Vous croyez en nous ? Suivez-nous</h2>
+                <div id="share-buttons">
+                    <?php //Lien de la page
+                    $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
+                    <!-- Facebook -->
+                    <a href="http://www.facebook.com/sharer.php?u=<?php echo $actual_link ?>" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+                    <!-- LinkedIn -->
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $actual_link ?>" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+                </div>
+            </section>
+
+            <div id="temoignages" class="container">
+                <h2>Ils vous parlent de nous</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <blockquote>
+                            <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
+                            <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
+                        </blockquote>
+                        <cite>
+                            <span class="nom">Pipou</span><br>
+                            <span class="role">Chat professionnel</span><br>
+                        </cite>
+                    </div>
+                    <div class="col-lg-4">
+                        <blockquote>
+                            <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
+                            <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
+                        </blockquote>
+                        <cite>
+                            <span class="nom">Pipou</span><br>
+                            <span class="role">Chat professionnel</span><br>
+                        </cite>
+                    </div>
+                    <div class="col-lg-4">
+                        <blockquote>
+                            <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
+                            <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
+                        </blockquote>
+                        <cite>
+                            <span class="nom">Pipou</span><br>
+                            <span class="role">Chat professionnel</span><br>
+                        </cite>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div id="conversion" class="container">
-            <h2>Ne ratez pas la sortie de la plateforme handi-cape</h2>
-            <p>Vous voulez jouer un rôle dans cette révolution ? Partagez le lien et rejoignez nous sur les réseaux sociaux.</p>
-            <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données par la suite.
-            </p>
-            <form action="" method="POST">
-                <input type="email" placeholder="Votre adresse email">
-                <input type="submit" value="Je souhaite être informé">
-            </form>
-
-            <h2>Vous croyez en nous ? Suivez-nous</h2>
-            <div id="share-buttons">
-                <?php //Lien de la page
-                $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
-                <!-- Facebook -->
-                <a href="http://www.facebook.com/sharer.php?u=<?php echo $actual_link ?>" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-                <!-- LinkedIn -->
-                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $actual_link ?>" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
-                <!-- Twitter -->
-                <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-            </div>
-        </div>
-
-        <div id="temoignages" class="container">
-            <h2>Ils vous parlent de nous</h2>
-            <div class="row">
-                <div class="col-4">
-                    <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
-                    <span class="nom">Pipou</span><br>
-                    <span class="role">Chat professionnel</span><br>
-                    <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
-                </div>
-                <div class="col-4">
-                    <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
-                    <span class="nom">Pipou</span><br>
-                    <span class="role">Chat professionnel</span><br>
-                    <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
-                </div>
-                <div class="col-4">
-                    <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
-                    <span class="nom">Pipou</span><br>
-                    <span class="role">Chat professionnel</span><br>
-                    <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
-                </div>
-            </div>
-        </div>
+        </main>
 
         <footer>
             ©Handi-cape 2018 - <a href="#" title="Mentions légales">Mentions légales</a>
