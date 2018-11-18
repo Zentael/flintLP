@@ -1,0 +1,55 @@
+body {
+    font-size: 100%;
+    position: relative;
+}
+
+.floaty{
+    position: absolute;
+    top: 0;
+    left:0 ;
+    padding: 20px;
+}
+
+h1{
+    font-size: 3em;
+}
+button{
+    font-size: 15px!important;
+}
+
+p{
+    padding: 20px 0;
+}
+
+/*White on black*/
+.accessibleText{
+    background: black!important;
+    color: white!important;
+}
+
+/* fiche */
+.fiche{
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+.fiche:hover{
+    transform: translate(0,-15px);
+    transition: 0.3s;
+    box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.24);
+}
+.fiche .photo{
+    height: 200px;
+    width: 100%;
+    background: lightgray;
+}
+.fiche .nom{
+    padding: 20px 20px 0 20px;
+}
+.fiche .job{
+    padding: 10px 20px 20px 20px;
+}
