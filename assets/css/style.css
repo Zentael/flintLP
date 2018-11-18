@@ -36,6 +36,24 @@ TEMOIGNAGE
     background-color: #edffbc;
 }
 
+#temoignages blockquote img{
+    margin:auto;
+    display:block;
+}
+
+#temoignages blockquote p{
+    max-width:300px;
+    display:block;
+    margin:auto;
+}
+
+#temoignages cite{
+    max-width:300px;
+    text-align: right;
+    display:block;
+    margin:auto;
+}
+
 /***
 FOOTER
 ***/
@@ -50,6 +68,6 @@ PARTAGE RS
     width: 45px;
     padding: 5px;
     border: 0;
-    box-shadow: 0;
+    box-shadow: none;
     display: inline;
 }
