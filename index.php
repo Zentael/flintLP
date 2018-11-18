@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content=""> <!-- référencement-->
         <meta name="author" content="Handi-cape">
         <meta name="description" content="Description du site">  <!-- 140 char -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Handi-cape</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="assets/css/style.css" rel="stylesheet">
         <link rel="icon" href="assets/img/logo.ico">
 
-
-        <script
-                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -32,7 +27,7 @@
                     <article class="col-sm-6">
                         <h2>Les héros de votre entreprise</h2>
                         <p> Handi-cape est une plateforme de mise en relation entre les recruteurs et les personnes handicapés…. se baser sur le texte de la vidéo typo. Parler d’accessibilité. teaser</p>
-                        <button>M'informer de la sortie du site</button>
+                        <a href="#conversion" title="Lien vers le formulaire">M'informer de la sortie du site</a>
                     </article>
                     <article class="col-sm-6"></article>
                 </div>
@@ -58,11 +53,12 @@
             <section id="conversion" class="container">
                 <h2>Ne ratez pas la sortie de la plateforme handi-cape</h2>
                 <p>Vous voulez jouer un rôle dans cette révolution ? Partagez le lien et rejoignez nous sur les réseaux sociaux.</p>
-                <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données par la suite.
-                </p>
+                <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données dès que nous vous aurons informé du lancement de la plateforme.</p>
+                <div id="formResponse"></div>
                 <form action="" method="POST">
-                    <input type="email" placeholder="Votre adresse email">
-                    <input type="submit" value="Je souhaite être informé">
+                    <label for="email">Votre adresse email</label>
+                    <input type="email" id="email" name="mail" placeholder="Votre adresse email">
+                    <span id="validateContactForm">Je souhaite être informé</span>
                 </form>
 
                 <h2>Vous croyez en nous ? Suivez-nous</h2>

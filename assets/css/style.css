@@ -1,4 +1,12 @@
 /***
+GENERAL
+***/
+a{
+    text-decoration:none;
+    color: black;
+}
+
+/***
 HEADER
 ***/
 header{
@@ -35,18 +43,15 @@ TEMOIGNAGE
 #temoignages{
     background-color: #edffbc;
 }
-
 #temoignages blockquote img{
     margin:auto;
     display:block;
 }
-
 #temoignages blockquote p{
     max-width:300px;
     display:block;
     margin:auto;
 }
-
 #temoignages cite{
     max-width:300px;
     text-align: right;
