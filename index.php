@@ -37,6 +37,7 @@
                 <h2>Est-ce que votre entreprise respecte les quotas ?</h2>
                 <div class="row">
                     <article class="col-sm-6">
+                        <p>En France, la loi oblige les entreprises a atteindre un quota de 6% de travailleurs handicapés. Les sanctions peuvent aller jusqu'à 600 fois le montant du S.M.I.C. Cependant en France, le taux moyen est de 3.6% dans le privé et 4.9% dans le public.</p>
                         <label for="effectif">Nombre de personnes dans votre entreprise ?</label>
                         <input type="text" id="effectif">
                         <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
@@ -44,8 +45,8 @@
                         <button id="calculQuota">Faire le test</button>
                     </article>
                     <article class="col-sm-6">
-                        <p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>
-                        <img src="assets/img/no.jpg" alt="Vous êtes en dessous des quotas">
+                        <!--<p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>-->
+                        <img src="assets/img/try.png" id="resultQuota" alt="Vous êtes en dessous des quotas">
                     </article>
                 </div>
             </section>

@@ -19,6 +19,7 @@
             endwhile;
             if($doublon == 0){
                 $email = $_GET['mail'];
+                //Crypter ?
                 $req = $bdd->prepare('INSERT INTO emails(email) VALUES(:email)');
                 $req->execute(array(
                     'email' => $email

@@ -6,17 +6,20 @@ btnQuota.onclick = function (){
     const result = document.getElementById('resultQuota');
 
     if (nbEmployes < nbEmployesHandi){
-        result.style.backgroundColor = "red";
-        return result.innerText = "Je crois que vous vous êtes trompés dans vos chiffres, vérifiez et réessayez !";
+        //result.style.backgroundColor = "red";
+        //return result.innerText = "Je crois que vous vous êtes trompés dans vos chiffres, vérifiez et réessayez !";
+        result.setAttribute("src", "assets/img/incoherent.png");
     }
 
     let nbQuota = nbEmployes/(50/3) - nbEmployesHandi;
     nbQuota = Math.ceil(nbQuota);
 
     if (nbQuota > 0){
-        result.innerText = "Vous êtes à " + nbQuota + " handicapés de remplir votre Quota !";
+        //result.innerText = "Vous êtes à " + nbQuota + " handicapés de remplir votre Quota !";
+        result.setAttribute("src", "assets/img/no.png");
     } else {
-        result.innerText = "Félicitations, vous avez déjà rempli votre quota !";
+        //result.innerText = "Félicitations, vous avez déjà rempli votre quota !";
+        result.setAttribute("src", "assets/img/yes.png");
     }
     console.log(nbQuota);
 }
