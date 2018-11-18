@@ -41,3 +41,13 @@ $('#validateContactForm').click(function () {
     xhttp.open("GET", "inc-traitement-contact.php?mail="+mail, true);
     xhttp.send();
 });
+
+/* SMOOTH SCROLL TO ANCHOR */
+/* Si on clique sur un lien vers un élément de la même page, faire une animation */
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
