@@ -11,6 +11,7 @@ HEADER
 ***/
 header{
     background-color: lightgrey;
+    text-align: center;
 }
 
 /***
@@ -64,6 +65,7 @@ FOOTER
 ***/
 footer{
     background-color: lightgrey;
+    text-align: center;
 }
 
 /***

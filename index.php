@@ -18,11 +18,12 @@
 
     <body>
         <header>
-            <h1>Handi-cape</h1>
+            <img src="assets/img/logo.png" alt="Logo de Handi-cape">
         </header>
 
         <main>
             <section id="about-us" class="container">
+                <h1>Les héros de votre entreprise</h1>
                 <div class="row">
                     <article class="col-sm-6">
                         <h2>Les héros de votre entreprise</h2>
