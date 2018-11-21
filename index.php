@@ -5,12 +5,28 @@
         <meta name="robots" content=""> <!-- référencement-->
         <meta name="author" content="Handi-cape">
         <meta name="description" content="Description du site">  <!-- 140 char -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <title>Handi-cape</title>
+
+        <meta name="theme-color" content="#000000">
+        <link rel="manifest" href="/manifest.json">
+
+        <meta name="twitter:card" content="summary" >
+        <meta name="twitter:site" content="" > <!--url de notre site-->
+        <meta name="twitter:title" content="Handi-cape" >
+        <meta name="twitter:description" content="Description du site" >
+        <meta name="twitter:creator" content="@Handi-cape" >
+        <meta name="twitter:image:src" content="" > <!--Image carré du logo-->
+        <meta property="og:title" content="Handi-cape" >
+        <meta property="og:type" content="website" >
+        <meta property="og:url" content="" > <!--Notre url-->
+        <meta property="og:image" content="" > <!--Image carré du logo-->
+        <meta property="og:description" content="Description du site" >
+        <meta property="og:site_name" content="Handi-cape" >
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="assets/css/style.css" rel="stylesheet">
-        <link rel="icon" href="assets/img/logo.ico">
+        <link rel="shortcut icon" href="assets/img/logo.ico">
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
