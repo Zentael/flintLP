@@ -1,0 +1,10 @@
+{
+  "name": "Handi-cape",
+  "short_name": "Handi-cape",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff", //Main color de la charte graphique
+  "description": "Description du site",
+  //Rajouter des icones
+  //https://developer.mozilla.org/en-US/docs/Web/Manifest
+}
