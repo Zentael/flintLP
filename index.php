@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content=""> <!-- référencement-->
         <meta name="author" content="Handi-cape">
         <meta name="description" content="Description du site">  <!-- 140 char -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Handi-cape</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="assets/css/style.css" rel="stylesheet">
         <link rel="icon" href="assets/img/logo.ico">
 
-
-        <script
-                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <h1>Handi-cape</h1>
+            <img src="assets/img/logo.png" alt="Logo de Handi-cape">
         </header>
 
         <main>
             <section id="about-us" class="container">
+                <h1>Les héros de votre entreprise</h1>
                 <div class="row">
                     <article class="col-sm-6">
                         <h2>Les héros de votre entreprise</h2>
                         <p> Handi-cape est une plateforme de mise en relation entre les recruteurs et les personnes handicapés…. se baser sur le texte de la vidéo typo. Parler d’accessibilité. teaser</p>
-                        <button>M'informer de la sortie du site</button>
+                        <a href="#conversion" title="Lien vers le formulaire">M'informer de la sortie du site</a>
                     </article>
                     <article class="col-sm-6"></article>
                 </div>
@@ -42,6 +38,7 @@
                 <h2>Est-ce que votre entreprise respecte les quotas ?</h2>
                 <div class="row">
                     <article class="col-sm-6">
+                        <p>En France, la loi oblige les entreprises a atteindre un quota de 6% de travailleurs handicapés. Les sanctions peuvent aller jusqu'à 600 fois le montant du S.M.I.C. Cependant en France, le taux moyen est de 3.6% dans le privé et 4.9% dans le public.</p>
                         <label for="effectif">Nombre de personnes dans votre entreprise ?</label>
                         <input type="text" id="effectif">
                         <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
@@ -49,8 +46,8 @@
                         <button id="calculQuota">Faire le test</button>
                     </article>
                     <article class="col-sm-6">
-                        <p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>
-                        <img src="assets/img/no.jpg" alt="Vous êtes en dessous des quotas">
+                        <!--<p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>-->
+                        <img src="assets/img/try.png" id="resultQuota" alt="Vous êtes en dessous des quotas">
                     </article>
                 </div>
             </section>
@@ -58,11 +55,12 @@
             <section id="conversion" class="container">
                 <h2>Ne ratez pas la sortie de la plateforme handi-cape</h2>
                 <p>Vous voulez jouer un rôle dans cette révolution ? Partagez le lien et rejoignez nous sur les réseaux sociaux.</p>
-                <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données par la suite.
-                </p>
+                <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données dès que nous vous aurons informé du lancement de la plateforme.</p>
+                <div id="formResponse"></div>
                 <form action="" method="POST">
-                    <input type="email" placeholder="Votre adresse email">
-                    <input type="submit" value="Je souhaite être informé">
+                    <label for="email">Votre adresse email</label>
+                    <input type="email" id="email" name="mail" placeholder="Votre adresse email">
+                    <span id="validateContactForm">Je souhaite être informé</span>
                 </form>
 
                 <h2>Vous croyez en nous ? Suivez-nous</h2>
