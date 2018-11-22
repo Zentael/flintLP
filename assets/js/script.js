@@ -1,5 +1,6 @@
-const btnQuota = document.getElementById('calculQuota');
 
+/* TEST DU QUOTA DE TRAVAILLEURS HANDICAPES */
+const btnQuota = document.getElementById('calculQuota');
 btnQuota.onclick = function (){
 
     const nbEmployes = document.getElementById('effectif').value;
@@ -12,7 +13,7 @@ btnQuota.onclick = function (){
         return result.setAttribute("src", "assets/img/incoherent.png");
     }
 
-    let nbQuota = nbEmployes/(50/3) - nbEmployesHandi;
+    var nbQuota = nbEmployes/(50/3) - nbEmployesHandi;
     nbQuota = Math.ceil(nbQuota);
 
     if (nbQuota > 0){
@@ -53,37 +54,4 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
-/* MODULE ACCESSIBILITE */
-var fontSize = 0;
-$('.changeSize').click(function () {
-    if($(this).hasClass('increase')){
-        if(fontSize<3){
-            $('body').animate({'font-size': '+=5'});
-            fontSize++;
-        }
-    }
-    else{
-        if(fontSize>0){
-            $('body').animate({'font-size': '-=5'});
-            fontSize--;
-        }
-    }
-});
-$('.visual').click(function () {
-    if($(this).hasClass('active')){
-        $(this).text('Version Noir et blanc');
-        $(this).removeClass('active');
-    }
-    else{
-        $(this).text('Version normale');
-        $(this).addClass('active');
-    }
-    $('*').each(function () {
-        if($(this).hasClass('white-on-black')){
-            $(this).removeClass('white-on-black');
-        }
-        else{
-            $(this).addClass('white-on-black');
-        }
-    });
-});
+

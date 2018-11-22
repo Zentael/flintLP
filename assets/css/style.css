@@ -1,6 +1,13 @@
 /***
 GENERAL
 ***/
+body {
+    font-size: 100%;
+    position: relative;
+}
+h1{
+    font-size: 3em;
+}
 
 /***
 GUI
@@ -143,4 +150,5 @@ MODULE ACCESSIBILITE
 .white-on-black{
     background : black;
     color : white;
+    border: 1px solid white;
 }
