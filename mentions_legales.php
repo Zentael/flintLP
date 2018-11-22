@@ -13,6 +13,8 @@
     </head>
 
     <body>
+    <?php include 'includes/module-accessibilite.php'; ?>
+    <?php include 'includes/header.php'; ?>
 
         <section>
             <article>
@@ -83,5 +85,6 @@
             </article>
         </section>
 
+        <script src="assets/js/module-accessibilite.js"></script>
     </body>
 </html>
