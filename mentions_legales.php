@@ -14,20 +14,6 @@
 
     <body>
 
-        <?php include 'includes/module-accessibilite.php'; ?>
-        <?php include 'includes/header.php'; ?>
-
-        <div class="container">
-            <h1>Nos mentions légales</h1>
-
-            <section>
-                <article>
-                    <h2>Editeur du site</h2>
-                    <p><b>Handi-cape</b></p>
-                </article>
-            </section>
-        </div>
-
-        <script src="assets/js/module-accessibilite.js"></script>
+        
     </body>
 </html>
