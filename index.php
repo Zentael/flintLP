@@ -44,7 +44,7 @@
                     <article class="col-sm-6">
                         <h2>Les héros de votre entreprise</h2>
                         <p> Handi-cape est une plateforme de mise en relation entre les recruteurs et les personnes handicapés…. se baser sur le texte de la vidéo typo. Parler d’accessibilité. teaser</p>
-                        <a href="#conversion" title="Lien vers le formulaire">M'informer de la sortie du site</a>
+                        <a href="#conversion" title="Lien vers le formulaire" class="btn-cta">M'informer de la sortie du site</a>
                     </article>
                     <article class="col-sm-6"></article>
                 </div>
@@ -76,7 +76,7 @@
                 <form action="" method="POST">
                     <label for="email">Votre adresse email</label>
                     <input type="email" id="email" name="mail" placeholder="Votre adresse email">
-                    <span id="validateContactForm">Je souhaite être informé</span>
+                    <span id="validateContactForm" class="btn-cta" tabindex="0">Je souhaite être informé</span>
                 </form>
 
                 <h2>Vous croyez en nous ? Suivez-nous</h2>
@@ -130,7 +130,7 @@
         </main>
 
         <footer>
-            ©Handi-cape 2018 - <a href="#" title="Mentions légales">Mentions légales</a>
+            ©Handi-cape 2018 - <a href="mentions_legales.php" target="_blank" title="Consulter les mentions légales">Mentions légales</a>
         </footer>
 
         <script src="assets/js/script.js"></script>
