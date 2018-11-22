@@ -2,14 +2,11 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta name="robots" content=""> <!-- référencement-->
+        <meta name="robots" content="index,follow"> <!-- référencement-->
         <meta name="author" content="Handi-cape">
         <meta name="description" content="Description du site">  <!-- 140 char -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <title>Handi-cape</title>
-
-        <meta name="theme-color" content="#000000">
-        <link rel="manifest" href="/manifest.json">
 
         <meta name="twitter:card" content="summary" >
         <meta name="twitter:site" content="" > <!--url de notre site-->
@@ -88,7 +85,7 @@
                     <!-- LinkedIn -->
                     <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $actual_link ?>" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
                     <!-- Twitter -->
-                    <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+                    <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Découvrez%20Handi-cape&amp;hashtags=handicape" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
                 </div>
             </section>
 
