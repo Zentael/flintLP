@@ -3,6 +3,10 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="robots" content="noindex ,nofollow"> <!-- référencement-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <title>Mentions légales Handi-cape</title>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link href="assets/css/style.css" rel="stylesheet">
@@ -16,7 +20,10 @@
     <?php include 'includes/module-accessibilite.php'; ?>
     <?php include 'includes/header.php'; ?>
 
-        <section>
+        <section class="container">
+
+            <a href="index.php" title="Retourner au site">Retourner au site</a>
+
             <article>
                 <h2>Editeur du site</h2>
                 <p><b>Handi-cape</b></p>
@@ -57,7 +64,7 @@
                 </p>
             </article>
         </section>
-        <section>
+        <section class="container">
             <article>
                 <h2>Conditions d'utilisation du site</h2>
                 <p>En tant qu'utilisateur, vous acceptez le fait que l'utilisation du site Internet ou des informations qui y sont reprises se fait exclusivement à vos propres risques. Le site Internet et toutes les informations qu'il contient sont disponibles tels quels : "en l'état" et sans qu'aucune garantie quelconque soit fournie.</p>
@@ -84,6 +91,8 @@
                 <p>Le présent Site a été créé en France. En utilisant le présent Site, vous acceptez les conditions d'utilisation décrites ci-avant, sans préjudice de tous recours de nature contractuelle ou délictuelle pouvant être exercés par talentup.com. Tout litige portant sur l'interprétation ou l'exécution d'un engagement contractuel prévu au présent site sera de la compétence exclusive des tribunaux français faisant application de la loi française.</p>
             </article>
         </section>
+
+        <?php include 'includes/footer.php'; ?>
 
         <script src="assets/js/module-accessibilite.js"></script>
     </body>

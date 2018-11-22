@@ -81,10 +81,10 @@
                 <form action="" method="POST">
                     <label for="email">Votre adresse email</label>
                     <input type="email" id="email" name="mail" placeholder="Votre adresse email">
-                    <span id="validateContactForm" class="btn-cta" tabindex="0">Je souhaite être informé</span>
+                    <input type="submit" id="validateContactForm" class="btn-cta" tabindex="0" value="Je souhaite être informé">
                 </form>
 
-                <h2>Vous croyez en nous ? Suivez-nous</h2>
+                <h2>Vous croyez en nous ? Faites le savoir !</h2>
                 <div id="share-buttons">
                     <?php //Lien de la page
                     $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
@@ -101,34 +101,34 @@
                 <h2>Ils vous parlent de nous</h2>
                 <div class="row">
                     <div class="col-lg-4">
-                        <blockquote>
-                            <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
-                            <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
-                        </blockquote>
+                        <img src="assets/img/photo-profil.jpg" alt="Photo de Chat">
                         <cite>
-                            <span class="nom">Pipou</span><br>
-                            <span class="role">Chat professionnel</span><br>
+                            <span class="nom">Fabrice</span>
+                            <span class="role">Chargé de recrutement</span>
                         </cite>
+                        <blockquote>
+                            <p>"Avant je devais passer sur toutes les plateformes type indeed et monster pour trouver des personnes handicapées, maintenant, c'est tellement plus simple !"</p>
+                        </blockquote>
                     </div>
                     <div class="col-lg-4">
-                        <blockquote>
-                            <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
-                            <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
-                        </blockquote>
+                        <img src="assets/img/photo-profil.jpg" alt="Photo de Chat">
                         <cite>
-                            <span class="nom">Pipou</span><br>
-                            <span class="role">Chat professionnel</span><br>
+                            <span class="nom">Danielle</span>
+                            <span class="role">Chasseuse de tête</span>
                         </cite>
+                        <blockquote>
+                            <p>"Passer des heures sur LinkedIn avant d'identifier un profil handicapé, c'était vraiment pas top. Grâce à Handi-cape je vais gagner un temps monstre dans mon workflow."</p>
+                        </blockquote>
                     </div>
                     <div class="col-lg-4">
-                        <blockquote>
-                            <img src="assets/img/photo-profil.jpg" alt="Photo de Chat"><br>
-                            <p>Pipou est un chat de compétition et il est super fan de notre service de mise en relation des recruteurs avec les personnes handicapés.</p>
-                        </blockquote>
+                        <img src="assets/img/photo-profil.jpg" alt="Photo de Chat">
                         <cite>
-                            <span class="nom">Pipou</span><br>
-                            <span class="role">Chat professionnel</span><br>
+                            <span class="nom">Pierre</span>
+                            <span class="role">Assistant RH</span>
                         </cite>
+                        <blockquote>
+                            <p>"Je redoutais toujours le moments dans le mois où mon patron me demandait de rechercher des handicapés pour grossir les quotas de la boîte. Avec Handi-cape, c'est terminé !"</p>
+                        </blockquote>
                     </div>
                 </div>
             </div>

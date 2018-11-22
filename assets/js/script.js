@@ -27,7 +27,8 @@ btnQuota.onclick = function (){
 }
 
 /* AJAX VALIDATION DU FORMULAIRE DE CONTACT */
-$('#validateContactForm').click(function () {
+$('#validateContactForm').click(function (e) {
+    e.preventDefault();
     /* Initialiser l'objet xhttp */
     var xhttp = new XMLHttpRequest();
     /* Récupérer les valeaurs des champs */
@@ -48,7 +49,6 @@ $('#validateContactForm').click(function () {
 /* Si on clique sur un lien vers un élément de la même page, faire une animation */
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
-
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
