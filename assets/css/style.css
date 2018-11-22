@@ -8,6 +8,12 @@ body {
 h1{
     font-size: 3em;
 }
+iframe{
+    width: 460px;
+}
+footer{
+    padding-bottom: 68px;
+}
 
 /***
 GUI
@@ -123,15 +129,25 @@ MODULE ACCESSIBILITE
 ***/
 #module-accessibilite{
     background-color: white;
-    padding: 20px;
+    padding: 10px 20px;
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
     border: 1px solid lightgrey;
     z-index: 1000;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
 }
 .white-on-black{
     background : black;
     color : white;
     border: 1px solid white;
+}
+#module-accessibilite span{
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+    border:1px solid black;
+    padding: 10px;
 }
