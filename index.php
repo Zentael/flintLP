@@ -30,6 +30,9 @@
     </head>
 
     <body>
+
+        <?php include 'includes/module-accessibilite.php'; ?>
+
         <header>
             <img src="assets/img/logo.png" alt="Logo de Handi-cape">
         </header>
