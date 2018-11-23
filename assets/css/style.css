@@ -1,9 +1,15 @@
 /***
 GENERAL
 ***/
+*{
+    font-family: 'Roboto', sans-serif;
+}
 body {
     font-size: 100%;
     position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Julius Sans One', sans-serif;
 }
 h1{
     font-size: 3em;
@@ -19,48 +25,101 @@ GUI
 a{
     text-decoration:none;
     color: black;
+    position: relative;
 }
 a:hover{
+    text-decoration: none;
+}
+.link-underline-white:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: white;
+    border-bottom: 1px solid white;
+    margin-bottom: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.2s;
+}
+.link-underline-white:hover{
     text-decoration:none;
-    color: blue;
+    color: white;
+}
+.link-underline-white:hover:after{
+    border-bottom: 3px solid white;
+    margin-bottom: 0px;
+    transition: 0.1s;
 }
 /* input fields */
 input[type='text'],
 input[type='email']{
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #272c80;
+    border-radius: 8px;
     padding: 10px 5px;
 }
 
 input[type='text']:focus,
 input[type='email']:focus{
-    outline: 1px solid red;
+    outline: none;
+    box-shadow: 0 0 3pt 2pt #2d57bb;
 }
 /*buttons*/
 input[type='submit'],
 button,
 .btn-cta{
-    background-color: green;
+    background-color: #272c80;
     color: white;
-    border: 1px solid black;
+    border: 1px solid #272c80;
     padding: 10px 15px;
     display: inline-block;
+    transition: 0.2s;
+    border-radius: 8px;
 }
 input[type='submit']:hover,
 button:hover,
 .btn-cta:hover{
     background-color: white;
-    color: black;
-    border: 1px solid green;
+    color: #2d57bb;
+    border: 1px solid #2d57bb;
     cursor: pointer;
+    transition: 0.2s;
 }
 input[type='submit']:focus,
 button:focus,
 .btn-cta:focus{
     background-color: white;
     color: black;
-    outline: 1px solid red;
+    outline: none;
+    box-shadow: 0 0 3pt 2pt #2d57bb;
     cursor: pointer;
+}
+.label-checkbox{
+    position: relative;
+    vertical-align: middle;
+}
+.label-checkbox:before{
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: middle;
+    outline: 1px solid #272c80;
+    margin-right: 10px;
+}
+.label-checkbox:hover:before{
+    background: #f2c03c;
+    cursor: pointer;
+}
+.selected-checkbox:before{
+    background: #f2c03c;
+}
+input[type='checkbox']{
+    /*display: none;*/
 }
 
 /***
@@ -75,14 +134,14 @@ header{
 ABOUT US
 ***/
 #about-us{
-    background-color: lightblue;
+    margin-bottom: 50px;
 }
 
 /***
 ABOUT US
 ***/
 #test-quota{
-    background-color: lightpink;
+    margin-bottom: 50px;
 }
 #test-quota img{
     max-width: 100%;
@@ -92,22 +151,26 @@ ABOUT US
 ABOUT US
 ***/
 #conversion{
-    background-color: antiquewhite;
+    margin-bottom: 50px;
 }
 
 /***
 TEMOIGNAGE
 ***/
 #temoignages{
-    background-color: #edffbc;
+    margin-bottom: 50px;
 }
 
 /***
 FOOTER
 ***/
 footer{
-    background-color: lightgrey;
+    background-color: #272c80;
     text-align: center;
+    color: white;
+}
+footer a{
+    color:white;
 }
 
 /***
@@ -153,7 +216,6 @@ MODULE ACCESSIBILITE
     border: 1px solid lightgrey;
     z-index: 1000;
     height: 100vh;
-    text-align: center;
     border-left: 1px solid black;
     transform: translate(100%,0);
     transition: 0.3s;

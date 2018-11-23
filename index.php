@@ -23,6 +23,8 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
         <link rel="shortcut icon" href="assets/img/logo.ico">
 
@@ -36,23 +38,12 @@
 
         <main>
             <section id="about-us" class="container">
-                <h1>Handi-cape</h1>
-                <div class="row">
-                    <article class="col-12 col-lg-6">
-                        <h2>Les héros de votre entreprise</h2>
-                        <p>Nous constatons aujourd’hui que malgré les réformes mises en places encore 20% des personnes handicapés n’ont pas d’activité professionnelle soit deux fois plus que les personnes ne souffrant pas d'un handicap.
-                            En créant Handi-cape nous voulons agir en mettant la technologie au service de ceux qui en ont besoin. Notre site internet sera la première plateforme qui met en relation les recruteurs et les travailleurs handicapés.
-                            Grâce à Handi-cape, vous aurez enfin la possibilité de sélectionner les meilleurs profils en vous basant sur des critères spécifique en fonction des besoin de votre entreprise.
-                            Handi-cape est une plateforme de mise en relation entre les recruteurs et les personnes handicapés. Elle est pensée pour vous et pour vos besoins.
-
-                            Ne perdez plus de temps en sourcing intensif pour trouver la perle rare des candidats, car ils sont tous sur Handi-cape.fr.
-                        </p>
-                    </article>
-                    <div class="col-12 col-lg-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo de présentation de Handicape"></iframe>
-                    </div>
-                    <a href="#conversion" title="Lien vers le formulaire" class="btn-cta">M'informer de la sortie du site</a>
+                <h1>Les héros de votre entreprise</h1>
+                <div class="container-iframe">
+                    <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo de présentation de Handicape"></iframe>
                 </div>
+                <br><br>
+                <a href="#conversion" title="Lien vers le formulaire" class="btn-cta">M'informer de la sortie du site</a>
             </section>
 
             <section id="test-quota" class="container">
@@ -82,8 +73,8 @@
                     <label for="email">Votre adresse email</label>
                     <input type="email" id="email" name="mail" placeholder="Votre adresse email">
                     <br><br>
-                    <input type="checkbox" id="check-box">
-                    <label for="check-box">Respecte la RGPD frr</label>
+                    <input type="checkbox" id="check-box" hidden>
+                    <label tabindex="0" class="label-checkbox" for="check-box">Respecte la RGPD frr</label>
                     <br><br>
                     <input type="submit" id="validateContactForm" class="btn-cta" tabindex="0" value="Je souhaite être informé">
                 </form>

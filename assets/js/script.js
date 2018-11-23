@@ -71,4 +71,38 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
+jQuery(document).ready(function() {
+    /* Taille du container Iframe */
+    var containerIframeWidth = $('.container-iframe').width();
+    var containerIframeHeight = containerIframeWidth/1.77;
+    $('iframe').css("width", containerIframeWidth+"px");
+    $('iframe').css("height", containerIframeHeight+"px");
+});
+/* Quand la page change de taille */
+$( window ).resize(function() {
+    /* Taille du container Iframe */
+    var containerIframeWidth = $('.container-iframe').width();
+    var containerIframeHeight = containerIframeWidth/1.77;
+    $('iframe').css("width", containerIframeWidth+"px");
+    $('iframe').css("height", containerIframeHeight+"px");
+});
 
+/* Custom checkbox */
+$('#check-box').change(function () {
+    if($(this).is(":checked")){
+        $('.label-checkbox').addClass('selected-checkbox');
+    }
+    else{
+        $('.label-checkbox').removeClass('selected-checkbox');
+    }
+});
+/* Checkbox clickable avec la barre espace avec pseudo element */
+$(document).keypress(function(e) {
+    var element = $(document.activeElement).attr('class');
+    if(element){
+        if(element.includes('label-checkbox')){
+            e.preventDefault();
+            $('#check-box').click();
+        }
+    }
+});
