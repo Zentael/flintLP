@@ -11,9 +11,6 @@ h1{
 iframe{
     width: 460px;
 }
-footer{
-    padding-bottom: 68px;
-}
 
 /***
 GUI
@@ -135,6 +132,17 @@ MODULE ACCESSIBILITE
     padding: 10px;
     font-size: 25px;
     cursor: pointer;
+    background-color: dodgerblue;
+    z-index: 1000;
+}
+.cta-accessibilite i{
+    color: white;
+}
+.cta-accessibilite:hover{
+    background-color: white;
+}
+.cta-accessibilite:hover i{
+    color:  dodgerblue ;
 }
 #module-accessibilite{
     background-color: white;
@@ -151,9 +159,14 @@ MODULE ACCESSIBILITE
     transition: 0.3s;
 }
 .white-on-black{
-    background : black;
-    color : white;
+    background-color : black!important;
+    color : white!important;
     border: 1px solid white;
+}
+.black-on-white{
+    background-color : white!important;
+    color : black!important;
+    border: 1px solid black;
 }
 #module-accessibilite .close{
     position: absolute;

@@ -5,7 +5,7 @@
         <meta name="robots" content="index,follow"> <!-- référencement-->
         <meta name="author" content="Handi-cape">
         <meta name="description" content="Description du site">  <!-- 140 char -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Handi-cape</title>
 
         <meta name="twitter:card" content="summary" >
@@ -49,7 +49,7 @@
                         </p>
                     </article>
                     <div class="col-12 col-lg-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo de présentation de Handicape"></iframe>
                     </div>
                     <a href="#conversion" title="Lien vers le formulaire" class="btn-cta">M'informer de la sortie du site</a>
                 </div>
@@ -81,6 +81,10 @@
                 <form action="" method="POST">
                     <label for="email">Votre adresse email</label>
                     <input type="email" id="email" name="mail" placeholder="Votre adresse email">
+                    <br><br>
+                    <input type="checkbox" id="check-box">
+                    <label for="check-box">Respecte la RGPD frr</label>
+                    <br><br>
                     <input type="submit" id="validateContactForm" class="btn-cta" tabindex="0" value="Je souhaite être informé">
                 </form>
 
@@ -89,11 +93,11 @@
                     <?php //Lien de la page
                     $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
                     <!-- Facebook -->
-                    <a href="http://www.facebook.com/sharer.php?u=<?php echo $actual_link ?>" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $actual_link ?>" target="_blank" title="Partager sur Facebook"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
                     <!-- LinkedIn -->
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $actual_link ?>" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $actual_link ?>" target="_blank" title="Partager sur Linkedin"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
                     <!-- Twitter -->
-                    <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Découvrez%20Handi-cape&amp;hashtags=handicape" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+                    <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Découvrez%20Handi-cape&amp;hashtags=handicape" target="_blank" title="Partager sur Twitter"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
                 </div>
             </section>
 

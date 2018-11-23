@@ -31,8 +31,13 @@ $('#validateContactForm').click(function (e) {
     e.preventDefault();
     /* Initialiser l'objet xhttp */
     var xhttp = new XMLHttpRequest();
-    /* Récupérer les valeaurs des champs */
+    /* Récupérer les valeurs des champs */
     var mail = document.getElementById("email").value;
+    var checkbox = document.getElementById("check-box");
+    var isChecked = 0;
+    if (checkbox.checked == true){
+        isChecked = 1;
+    }
     //vérifier si XMLHttpRequest() est interprété par tous les navigateurs cf; activeXObject()...
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -41,7 +46,7 @@ $('#validateContactForm').click(function (e) {
         }
     };
     /* Paramétrer le fichier de traitement php et lui passer des variables*/
-    xhttp.open("GET", "inc-traitement-contact.php?mail="+mail, true);
+    xhttp.open("GET", "inc-traitement-contact.php?mail="+mail+'&checkbox='+isChecked, true);
     xhttp.send();
 });
 
