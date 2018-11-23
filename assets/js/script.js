@@ -1,10 +1,22 @@
 
 /* TEST DU QUOTA DE TRAVAILLEURS HANDICAPES */
 const btnQuota = document.getElementById('calculQuota');
+const inputEmployes = document.getElementById('effectif');
+const inputEmployesHandi = document.getElementById('handicap');
+const digitsOnly = /\D+/g;
+
+inputEmployes.oninput = function(){
+    inputEmployes.value = inputEmployes.value.replace(digitsOnly, "");
+}
+
+inputEmployesHandi.oninput = function(){
+    inputEmployesHandi.value = inputEmployesHandi.value.replace(digitsOnly, "");
+}
+
 btnQuota.onclick = function (){
 
-    const nbEmployes = document.getElementById('effectif').value;
-    const nbEmployesHandi = document.getElementById('handicap').value;
+    const nbEmployes = inputEmployes.value;
+    const nbEmployesHandi = inputEmployesHandi.value;
     const result = document.getElementById('resultQuota');
 
     if (Number(nbEmployes) < Number(nbEmployesHandi)){
