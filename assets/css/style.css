@@ -229,17 +229,70 @@ MODULE ACCESSIBILITE
     color:  dodgerblue ;
 }
 #module-accessibilite{
-    background-color: white;
-    padding: 10px 20px;
+    background-color:#f8fafb;
     position: fixed;
     top: 0;
     right: 0;
-    border: 1px solid lightgrey;
     z-index: 1000;
     height: 100vh;
-    border-left: 1px solid black;
-    transform: translate(100%,0);
+    transform: translate(110%,0);
     transition: 0.3s;
+    -webkit-box-shadow: -4px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -4px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: -4px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.btn-switch{
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    background-color: #F2C03C;
+    color: #272c80;
+    overflow: hidden;
+    height: 50px;
+    position: relative;
+    text-align: center;
+}
+.btn-switch .switch-base{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    transition: 0.2s;
+}
+.btn-switch .switch-hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(150%,-50%);
+    width: 100%;
+    transition: 0.2s;
+}
+.btn-switch:hover{
+    cursor: pointer;
+}
+.btn-switch:hover .switch-base{
+    transform: translate(-150%,-50%);
+    transition: 0.2s;
+}
+.btn-switch:hover .switch-hover{
+    transform: translate(-50%,-50%);
+    transition: 0.2s;
+}
+#module-accessibilite h2{
+    background: #272c80;
+    color: white;
+    padding: 10px 0;
+}
+#module-accessibilite .zone-accessibilite{
+    background: white;
+    padding: 15px;
+    border: 2px solid #eee;
+    margin: 10px;
+}
+#module-accessibilite h2,
+#module-accessibilite h3{
+    text-align: center;
 }
 .white-on-black{
     background-color : black!important;
@@ -256,5 +309,53 @@ MODULE ACCESSIBILITE
     bottom: 10px;
     right:10px;
     border:1px solid black;
+    padding: 10px 13px;
+}
+
+#module-accessibilite button{
+    background-color: #272c80;
+    color: #F2C03C;
+    border: solid 1px #272c80;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.2s;
+    border-radius: 50%;
+    font-size: 31px;
+}
+#module-accessibilite button:hover{
+    cursor: pointer;
+    background-color: #F2C03C;
+    color: #272c80;
+}
+#module-accessibilite .custom-btn-accessibilite{
+    background-color: white;
+    color: black;
+    border: solid 1px #eee;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.2s;
+    margin: 0 2px;
+    border-radius: 0;
+    font-size: 17px;
+}
+#module-accessibilite .custom-btn-accessibilite:hover{
+    background-color: white;
+    border: 1px solid #272c80;
+}
+
+#module-accessibilite h4{
+    display: inline-block;
+}
+.element-accessibilite{
     padding: 10px;
+    border: 2px solid #eee;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.element-accessibilite:hoverz{
+    border: 2px solid #272c80;
 }

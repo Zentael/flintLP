@@ -113,14 +113,26 @@ $('.color-white-on-black').click(function () {
             $(this).removeClass('black-on-white');
         }
         else{
-            $(this).addClass('black-on-white');
+            $(this).addClass('black-on-white');s
         }
     });
 });*/
 
+/* Reset les paramètres */
+$('.reset-accessibilite').click(function () {
+    $('body').animate({'font-size': '-='+fontSize});
+    $('body').animate({'word-spacing': '-='+2*wordSpace});
+    $('body').animate({'letter-spacing': '-='+letterSpace});
+    $('body').animate({'line-height': '-='+lineHeight});
+    fontSize = 0;
+    wordSpace = 0;
+    letterSpace = 0;
+    lineHeight = 0;
+});
+
 /* Fermer le module accessibilité */
 $('.close').click(function () {
-    $('#module-accessibilite').css('transform','translate(100%,0)');
+    $('#module-accessibilite').css('transform','translate(110%,0)');
 });
 $('.cta-accessibilite').click(function () {
     $('#module-accessibilite').css('transform','translate(0,0)');

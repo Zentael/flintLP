@@ -54,13 +54,13 @@ $('#validateContactForm').click(function (e) {
             $( '#email-error-icon' ).removeClass('show-after');
         }
         else {
-            $('#email-error-icon').effect( 'shake' )
+            //$('#email-error-icon').effect( 'shake' )
             $( '.error-email' ).text( 'Le format de l\'email est invalide' );
             $( '#email-error-icon' ).addClass('show-after');
         }
     }
     else{
-        $('#email-error-icon').effect( 'shake' );
+        //$('#email-error-icon').effect( 'shake' );
         $( '.error-email' ).text( 'L\'email est oligatoire' );
         $( '#email-error-icon' ).addClass('show-after');
     }
@@ -72,7 +72,7 @@ $('#validateContactForm').click(function (e) {
         $( '.error-checkbox' ).text( '' );
     }
     else{
-        $( '.label-checkbox' ).effect( 'shake' );
+        //$( '.label-checkbox' ).effect( 'shake' );
         $( '.error-checkbox' ).text( 'La checkbox est oligatoire' );
     }
     //vérifier si XMLHttpRequest() est interprété par tous les navigateurs cf; activeXObject()...

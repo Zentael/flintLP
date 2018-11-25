@@ -1,18 +1,38 @@
 <div class="cta-accessibilite"><i class="fab fa-accessible-icon"></i></div>
 <div id="module-accessibilite">
     <h2>Adapter le site</h2>
-    <h3>Texte</h3>
-    <button class="change-font-size decrease">Font -</button><button class="change-font-size increase">Font +</button>
-    <br><br>
-    <button class="change-word-space decrease">Word -</button><button class="change-word-space increase">Word +</button>
-    <br><br>
-    <button class="change-letter-space decrease">Letter -</button><button class="change-letter-space increase">Letter +</button>
-    <br><br>
-    <button class="change-line-height decrease">Line -</button><button class="change-line-height increase">Line +</button>
-    <br><br>
-    <h3>Couleurs</h3>
-    <button class="color-white-on-black">Thème sombre</button>
-    <!--<br><br>
-    <button class="color-black-on-white">Thème clair</button>-->
-    <div class="close"><i class="fas fa-times"></i></div>
+        <div class="reset-accessibilite btn-switch">
+        <span class="switch-base">Réinitialiser les paramètres</span>
+        <span class="switch-hover"><i class="fas fa-redo"></i></span>
+    </div>
+    <div class="zone-accessibilite">
+        <h3>Ajuster le texte</h3>
+        <div class="element-accessibilite">
+            <h4>Taille du texte</h4><br>
+            <button class="change-font-size decrease">-</button>
+            <button class="change-font-size increase">+</button>
+        </div>
+        <div class="element-accessibilite">
+            <h4>Espace entre les mots</h4><br>
+            <button class="change-word-space decrease">-</button>
+            <button class="change-word-space increase">+</button>
+        </div>
+        <div class="element-accessibilite">
+            <h4>Espace entre les lettres</h4><br>
+            <button class="change-letter-space decrease">-</button>
+            <button class="change-letter-space increase">+</button>
+        </div>
+        <div class="element-accessibilite">
+            <h4>Taille des lignes</h4><br>
+            <button class="change-line-height decrease">-</button>
+            <button class="change-line-height increase">+</button>
+        </div>
+    </div>
+    <div class="zone-accessibilite">
+        <h3>Couleurs</h3>
+        <button class="color-white-on-black custom-btn-accessibilite">Thème sombre</button>
+        <!--<br><br>
+        <button class="color-black-on-white">Thème clair</button>-->
+    </div>
+    <div class="close" tabindex="0"><i class="fas fa-times"></i></div>
 </div>
