@@ -128,6 +128,11 @@ $('.reset-accessibilite').click(function () {
     wordSpace = 0;
     letterSpace = 0;
     lineHeight = 0;
+    $('*').each(function () {
+        if($(this).hasClass('white-on-black')){
+            $(this).removeClass('white-on-black');
+        }
+    });
 });
 
 /* Fermer le module accessibilité */
