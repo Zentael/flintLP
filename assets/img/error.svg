@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#272C80;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#A9ABCC;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M15.63,54c4.2,2.52,9.11,4,14.37,4s10.16-1.48,14.37-4L30,39.63L15.63,54z"/>
+	</g>
+	<g>
+		<path class="st0" d="M44.37,6C40.16,3.48,35.26,2,30,2S19.84,3.48,15.63,6L30,20.37L44.37,6z"/>
+	</g>
+	<g>
+		<path class="st0" d="M54,44.37c2.52-4.2,4-9.11,4-14.37c0-5.26-1.48-10.16-4-14.37L39.63,30L54,44.37z"/>
+	</g>
+	<g>
+		<path class="st0" d="M6,15.63C3.48,19.84,2,24.74,2,30c0,5.26,1.48,10.16,4,14.37L20.37,30L6,15.63z"/>
+	</g>
+	<path class="st1" d="M15.63,54c-3.95-2.37-7.26-5.68-9.63-9.63"/>
+	<g>
+		<path class="st2" d="M39.63,30L54,15.63c-2.37-3.95-5.68-7.26-9.63-9.63L30,20.37L39.63,30z"/>
+	</g>
+	<g>
+		<path class="st2" d="M20.37,30L6,44.37c2.37,3.95,5.68,7.26,9.63,9.63L30,39.63L20.37,30z"/>
+	</g>
+	<path class="st1" d="M6,15.63c2.37-3.95,5.68-7.26,9.63-9.63"/>
+	<g>
+		<path class="st2" d="M54,44.37L39.63,30L30,39.63L44.37,54C48.32,51.63,51.63,48.32,54,44.37z"/>
+	</g>
+	<g>
+		<path class="st2" d="M30,20.37L15.63,6C11.68,8.37,8.37,11.68,6,15.63L20.37,30L30,20.37z"/>
+	</g>
+	<g>
+		
+			<rect x="23.19" y="23.19" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 29.9998)" class="st2" width="13.62" height="13.62"/>
+	</g>
+</g>
+</svg>

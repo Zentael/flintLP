@@ -23,6 +23,8 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
@@ -30,6 +32,7 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </head>
 
     <body>
@@ -39,11 +42,18 @@
         <main>
             <section id="about-us" class="container">
                 <h1>Les héros de votre entreprise</h1>
+                <p>Nous constatons aujourd’hui que malgré les réformes mises en places encore 20% des personnes handicapés n’ont pas d’activité professionnelle soit deux fois plus que les personnes ne souffrant pas d'un handicap.
+                    En créant Handi-cape nous voulons agir en mettant la technologie au service de ceux qui en ont besoin.
+                </p>
+
+                <br><br>
+                <a href="#video" title="Lien vers le contenu principal" class="custom-btn-yellow">En savoir plus</a>
+            </section>
+
+            <section id="video" class="container">
                 <div class="container-iframe">
                     <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo de présentation de Handicape"></iframe>
                 </div>
-                <br><br>
-                <a href="#conversion" title="Lien vers le formulaire" class="btn-cta">M'informer de la sortie du site</a>
             </section>
 
             <section id="test-quota" class="container">
@@ -55,12 +65,27 @@
                         <input type="text" id="effectif" placeholder="ex: 300">
                         <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
                         <input type="text" id="handicap" placeholder="ex: 25">
-                        <button id="calculQuota">Faire le test</button>
+                        <button class="custom-btn-yellow" id="calculQuota">Faire le test</button>
                     </article>
                     <article class="col-sm-6">
                         <!--<p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>-->
                         <img src="assets/img/try.png" id="resultQuota" alt="Vous êtes en dessous des quotas">
                     </article>
+                </div>
+            </section>
+
+            <section id="steps" class="container">
+                <h2>En 3 étapes</h2>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="step">Inscrivez-vous</div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="step">Trouvez le meilleurs profils</div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="step">Recrutez en toute sérénité</div>
+                    </div>
                 </div>
             </section>
 
@@ -71,12 +96,19 @@
                 <div id="formResponse"></div>
                 <form action="" method="POST">
                     <label for="email">Votre adresse email</label>
-                    <input type="email" id="email" name="mail" placeholder="Votre adresse email">
+                    <br><br>
+                    <span id="email-error-icon">
+                        <input type="email" id="email" name="mail" placeholder="Votre adresse email">
+                    </span>
+                    <br>
+                    <span class="error-email"></span>
                     <br><br>
                     <input type="checkbox" id="check-box" hidden>
                     <label tabindex="0" class="label-checkbox" for="check-box">Respecte la RGPD frr</label>
+                    <br>
+                    <span class="error-checkbox"></span>
                     <br><br>
-                    <input type="submit" id="validateContactForm" class="btn-cta" tabindex="0" value="Je souhaite être informé">
+                    <input type="submit" id="validateContactForm" class="custom-btn-yellow" tabindex="0" value="Je souhaite être informé">
                 </form>
 
                 <h2>Vous croyez en nous ? Faites le savoir !</h2>
@@ -92,7 +124,7 @@
                 </div>
             </section>
 
-            <div id="temoignages" class="container">
+            <!--<div id="temoignages" class="container">
                 <h2>Ils vous parlent de nous</h2>
                 <div class="row">
                     <div class="col-lg-4">
@@ -126,7 +158,7 @@
                         </blockquote>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </main>
 
         <?php include 'includes/footer.php'; ?>

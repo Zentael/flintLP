@@ -57,43 +57,43 @@ input[type='email']{
     border: 1px solid #272c80;
     border-radius: 8px;
     padding: 10px 5px;
+    height: 53px;
 }
 
 input[type='text']:focus,
 input[type='email']:focus{
     outline: none;
-    box-shadow: 0 0 3pt 2pt #2d57bb;
+    /*box-shadow: 0 0 3pt 2pt #2d57bb;*/
 }
 /*buttons*/
-input[type='submit'],
-button,
-.btn-cta{
-    background-color: #272c80;
-    color: white;
+.custom-btn-yellow{
+    background-color: #F2C03C;
+    color: #272C80;
     border: 1px solid #272c80;
     padding: 10px 15px;
     display: inline-block;
     transition: 0.2s;
     border-radius: 8px;
 }
-input[type='submit']:hover,
-button:hover,
-.btn-cta:hover{
-    background-color: white;
-    color: #2d57bb;
-    border: 1px solid #2d57bb;
+.custom-btn-yellow:hover{
+    background-color: #272C80;
+    color: #F2C03C;
     cursor: pointer;
     transition: 0.2s;
+    font-weight: bold;
 }
-input[type='submit']:focus,
-button:focus,
-.btn-cta:focus{
-    background-color: white;
-    color: black;
+.custom-btn-yellow:focus{
+    background-color: #FBDC8B;
+    color: #272C80;
     outline: none;
-    box-shadow: 0 0 3pt 2pt #2d57bb;
-    cursor: pointer;
+    /*box-shadow: 0 0 3pt 2pt #2d57bb;*/
 }
+/* Gestion des placeholders */
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 .label-checkbox{
     position: relative;
     vertical-align: middle;
@@ -119,6 +119,43 @@ button:focus,
 input[type='checkbox']{
     /*display: none;*/
 }
+#email-error-icon{
+    position: relative;
+}
+#email-error-icon input{
+    padding-right: 50px;
+}
+#email-error-icon:after{
+    /*font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00d";
+    display: inline-block;
+    position: absolute;
+    bottom: -8px;
+    right: 9px;
+    color: #ffffff;
+    background: red;
+    border-radius: 50%;
+    padding: 0px 10px;
+    font-size: 24px;*/
+    content: "";
+    width: 43px;
+    height: 43px;
+    background: url(../img/error.svg) no-repeat center;
+    -webkit-background-size: cover;
+    opacity: 0;
+    display: inline-block;
+    position: absolute;
+    bottom: -11px;
+    right: 9px;
+}
+.show-after{
+    position: relative;
+}
+.show-after:after{
+    position: relative;
+    opacity: 1!important;
+}
 
 /***
 HEADER
@@ -129,34 +166,17 @@ header{
 }
 
 /***
-ABOUT US
+SECTION
 ***/
-#about-us{
-    margin-bottom: 50px;
+section{
+    padding-top: 50px;
 }
 
 /***
-ABOUT US
+QUOTAS
 ***/
-#test-quota{
-    margin-bottom: 50px;
-}
 #test-quota img{
     max-width: 100%;
-}
-
-/***
-ABOUT US
-***/
-#conversion{
-    margin-bottom: 50px;
-}
-
-/***
-TEMOIGNAGE
-***/
-#temoignages{
-    margin-bottom: 50px;
 }
 
 /***

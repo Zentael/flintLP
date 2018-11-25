@@ -27,18 +27,18 @@
                     $req->execute(array(
                         'email' => $email
                     ));
-                    echo "<span class='validationContact'>Vous êtes inscrit !</span>";
+                    echo "<span class='errorContact'>Vous êtes inscrit !</span>";
                 }
             }
             else{
-                echo "<span class='errorContact'>Le format de l'email est invalide</span>";
+                //echo "<span class='errorContact'>Le format de l'email est invalide</span>";
             }
         }
         else{
-            echo "<span class='errorContact'>L'email est obligatoire</span>";
+            //echo "<span class='errorContact'>L'email est obligatoire</span>";
         }
     }
     else{
-        echo "<span class='errorContact'>La checkbox est obligatoire</span><br>";
+       // echo "<span class='errorContact'>La checkbox est obligatoire</span><br>";
     }
 ?>

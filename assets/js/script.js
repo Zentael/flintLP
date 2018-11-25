@@ -44,11 +44,36 @@ $('#validateContactForm').click(function (e) {
     /* Initialiser l'objet xhttp */
     var xhttp = new XMLHttpRequest();
     /* Récupérer les valeurs des champs */
+    //Test email
     var mail = document.getElementById("email").value;
+    if(mail != ''){
+        // testing if it's a valid email adress
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if(regex.test(String(mail).toLowerCase())) {
+            $( '.error-email' ).text( '' );
+            $( '#email-error-icon' ).removeClass('show-after');
+        }
+        else {
+            $('#email-error-icon').effect( 'shake' )
+            $( '.error-email' ).text( 'Le format de l\'email est invalide' );
+            $( '#email-error-icon' ).addClass('show-after');
+        }
+    }
+    else{
+        $('#email-error-icon').effect( 'shake' );
+        $( '.error-email' ).text( 'L\'email est oligatoire' );
+        $( '#email-error-icon' ).addClass('show-after');
+    }
+    //Test Checkbox
     var checkbox = document.getElementById("check-box");
     var isChecked = 0;
     if (checkbox.checked == true){
         isChecked = 1;
+        $( '.error-checkbox' ).text( '' );
+    }
+    else{
+        $( '.label-checkbox' ).effect( 'shake' );
+        $( '.error-checkbox' ).text( 'La checkbox est oligatoire' );
     }
     //vérifier si XMLHttpRequest() est interprété par tous les navigateurs cf; activeXObject()...
     xhttp.onreadystatechange = function() {
@@ -71,8 +96,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
+/* Taille du container Iframe */
 jQuery(document).ready(function() {
-    /* Taille du container Iframe */
     var containerIframeWidth = $('.container-iframe').width();
     var containerIframeHeight = containerIframeWidth/1.77;
     $('iframe').css("width", containerIframeWidth+"px");
