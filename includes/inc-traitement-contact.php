@@ -12,6 +12,7 @@
                 //Tester si le mail est déjà renseigné en base
                 $doublon = 0;
                 $bdd = new PDO('mysql:host=localhost;dbname=landing_handicape', 'root', 'root');
+                //$bdd = new PDO('mysql:host=localhost;dbname=sc2arwen_landing_handicape', 'sc2arwen_landing_handicape', '4V7FUiV1XUhv');
                 $reponse = $bdd->query('SELECT * FROM emails');
                 while($donnees = $reponse->fetch()):
                     if($donnees['email'] == $_GET['mail'] ){

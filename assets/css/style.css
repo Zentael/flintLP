@@ -78,6 +78,7 @@ input[type='email']:focus{
 .custom-btn-yellow:hover{
     background-color: #272C80;
     color: #F2C03C;
+    border: 1px solid #F2C03C;
     cursor: pointer;
     transition: 0.2s;
     font-weight: bold;
@@ -97,6 +98,9 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .label-checkbox{
     position: relative;
     vertical-align: middle;
+}
+.label-checkbox:focus{
+    outline: none;
 }
 .label-checkbox:before{
     content: '';
@@ -170,6 +174,10 @@ SECTION
 ***/
 section{
     padding-top: 50px;
+}
+.section-blue{
+    background: #272c80;
+    color: white;
 }
 
 /***

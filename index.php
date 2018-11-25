@@ -89,7 +89,7 @@
                 </div>
             </section>
 
-            <section id="conversion" class="container">
+            <section id="conversion" class="container section-blue">
                 <h2>Ne ratez pas la sortie de la plateforme handi-cape</h2>
                 <p>Vous voulez jouer un rôle dans cette révolution ? Partagez le lien et rejoignez nous sur les réseaux sociaux.</p>
                 <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données dès que nous vous aurons informé du lancement de la plateforme.</p>

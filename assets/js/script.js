@@ -83,7 +83,7 @@ $('#validateContactForm').click(function (e) {
         }
     };
     /* Paramétrer le fichier de traitement php et lui passer des variables*/
-    xhttp.open("GET", "inc-traitement-contact.php?mail="+mail+'&checkbox='+isChecked, true);
+    xhttp.open("GET", "includes/inc-traitement-contact.php?mail="+mail+'&checkbox='+isChecked, true);
     xhttp.send();
 });
 
