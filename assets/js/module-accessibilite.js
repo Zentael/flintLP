@@ -136,7 +136,7 @@ $('.reset-accessibilite').click(function () {
 });
 
 /* Fermer le module accessibilité */
-$('.close').click(function () {
+$('.close-accessibilite').click(function () {
     $('#module-accessibilite').css('transform','translate(110%,0)');
 });
 $('.cta-accessibilite').click(function () {

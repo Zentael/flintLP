@@ -1,10 +1,15 @@
 <div class="cta-accessibilite"><i class="fab fa-accessible-icon"></i></div>
 <div id="module-accessibilite">
     <h2>Adapter le site</h2>
-        <div class="reset-accessibilite btn-switch">
+    <div class="reset-accessibilite btn-switch">
         <span class="switch-base">Réinitialiser les paramètres</span>
         <span class="switch-hover"><i class="fas fa-redo"></i></span>
     </div>
+    <div tabindex="0" class="close-accessibilite btn-switch">
+        <span class="switch-base">Fermer le panneau</span>
+        <span class="switch-hover"><i class="fas fa-times"></i></span>
+    </div>
+
     <div class="zone-accessibilite">
         <h3>Ajuster le texte</h3>
         <div class="element-accessibilite">
@@ -34,5 +39,4 @@
         <!--<br><br>
         <button class="color-black-on-white">Thème clair</button>-->
     </div>
-    <div class="close" tabindex="0"><i class="fas fa-times"></i></div>
 </div>

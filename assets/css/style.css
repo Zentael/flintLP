@@ -240,6 +240,7 @@ MODULE ACCESSIBILITE
     -webkit-box-shadow: -4px 0px 5px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: -4px 0px 5px 0px rgba(0,0,0,0.25);
     box-shadow: -4px 0px 5px 0px rgba(0,0,0,0.25);
+    overflow-y: auto;
 }
 .btn-switch{
     width: calc(100% - 20px);
@@ -250,6 +251,7 @@ MODULE ACCESSIBILITE
     height: 50px;
     position: relative;
     text-align: center;
+    margin-bottom: 10px;
 }
 .btn-switch .switch-base{
     position: absolute;
@@ -304,14 +306,13 @@ MODULE ACCESSIBILITE
     color : black!important;
     border: 1px solid black;
 }
-#module-accessibilite .close{
-    position: absolute;
-    bottom: 10px;
-    right:10px;
+
+/*#module-accessibilite .close{
+    display: block;
+    float: right;
     border:1px solid black;
     padding: 10px 13px;
-}
-
+}*/
 #module-accessibilite button{
     background-color: #272c80;
     color: #F2C03C;
@@ -356,6 +357,6 @@ MODULE ACCESSIBILITE
     text-align: center;
     margin-bottom: 10px;
 }
-.element-accessibilite:hoverz{
+.element-accessibilite:hover{
     border: 2px solid #272c80;
 }
