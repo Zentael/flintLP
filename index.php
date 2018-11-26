@@ -129,54 +129,17 @@
                 </div>
             </section>
 
-                <h2>Vous croyez en nous ? Faites le savoir !</h2>
+            <section id="reseaux" class="container">
+                <h2>Suivez nos réseaux !</h2>
                 <div id="share-buttons">
-                    <?php //Lien de la page
-                    $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
                     <!-- Facebook -->
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $actual_link ?>" target="_blank" title="Partager sur Facebook"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+                    <a href="" target="_blank" title="Voir notre Facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
                     <!-- LinkedIn -->
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $actual_link ?>" target="_blank" title="Partager sur Linkedin"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="" target="_blank" title="Voir notre Linkedin"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
                     <!-- Twitter -->
-                    <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Découvrez%20Handi-cape&amp;hashtags=handicape" target="_blank" title="Partager sur Twitter"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+                    <a href="" target="_blank" title="Voir notre Twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a>
                 </div>
-
-
-            <!--<div id="temoignages" class="container">
-                <h2>Ils vous parlent de nous</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="assets/img/photo-profil.jpg" alt="Photo de Chat">
-                        <cite>
-                            <span class="nom">Fabrice</span>
-                            <span class="role">Chargé de recrutement</span>
-                        </cite>
-                        <blockquote>
-                            <p>"Avant je devais passer sur toutes les plateformes type indeed et monster pour trouver des personnes handicapées, maintenant, c'est tellement plus simple !"</p>
-                        </blockquote>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="assets/img/photo-profil.jpg" alt="Photo de Chat">
-                        <cite>
-                            <span class="nom">Danielle</span>
-                            <span class="role">Chasseuse de tête</span>
-                        </cite>
-                        <blockquote>
-                            <p>"Passer des heures sur LinkedIn avant d'identifier un profil handicapé, c'était vraiment pas top. Grâce à Handi-cape je vais gagner un temps monstre dans mon workflow."</p>
-                        </blockquote>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="assets/img/photo-profil.jpg" alt="Photo de Chat">
-                        <cite>
-                            <span class="nom">Pierre</span>
-                            <span class="role">Assistant RH</span>
-                        </cite>
-                        <blockquote>
-                            <p>"Je redoutais toujours le moments dans le mois où mon patron me demandait de rechercher des handicapés pour grossir les quotas de la boîte. Avec Handi-cape, c'est terminé !"</p>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>-->
+            </section>
         </main>
 
         <?php include 'includes/footer.php'; ?>

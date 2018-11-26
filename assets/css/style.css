@@ -241,7 +241,7 @@ CONVERSION
 
     padding: 80px 0;
 }
-#conversion p,#conversion h2,#conversion label,#conversion strong{
+#conversion p,#conversion h2,#conversion label,#conversion strong,#conversion .error-checkbox,#conversion .error-email{
     color:white;
 }
 #conversion p{
@@ -253,6 +253,9 @@ CONVERSION
 #conversion input[type='email'],.email-error-icon{
     width: 100%;
     max-width: none;
+}
+#email-error-icon{
+    display: block;
 }
 #conversion input[type='email']{
     margin-top: 70px;
@@ -306,8 +309,8 @@ input[type='checkbox']{
     opacity: 0;
     display: inline-block;
     position: absolute;
-    bottom: -11px;
-    right: 9px;
+    bottom: 5px;
+    right: 5px;
 }
 .show-after{
     position: relative;
@@ -318,21 +321,35 @@ input[type='checkbox']{
 }
 
 /***
+PARTAGE RS
+***/
+#reseaux{
+    text-align: center;
+}
+#reseaux h2{
+    margin-bottom: 50px;
+}
+#reseaux #share-buttons a{
+    display: inline-block;
+    margin: 0 75px;
+}
+#reseaux #share-buttons a i{
+    font-size: 70px;
+    display: block;
+    margin-bottom: 15px;
+}
+#reseaux #share-buttons a span{
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+
+/***
 FOOTER
 ***/
 footer{
     text-align: center;
-}
-
-/***
-PARTAGE RS
-***/
-#share-buttons img {
-    width: 45px;
-    padding: 5px;
-    border: 0;
-    box-shadow: none;
-    display: inline;
+    padding: 30px 0;
 }
 
 /***
