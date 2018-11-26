@@ -3,6 +3,7 @@ GENERAL
 ***/
 *{
     font-family: 'Roboto', sans-serif;
+    color: #2d57bb;
 }
 body {
     font-size: 100%;
@@ -13,6 +14,16 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
     font-size: 3em;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 2em;
+}
+p{
+    font-size: 1.15em;
 }
 iframe{
     width: 460px;
@@ -58,6 +69,8 @@ input[type='email']{
     border-radius: 8px;
     padding: 10px 5px;
     height: 53px;
+    width: 100%;
+    max-width: 400px;
 }
 
 input[type='text']:focus,
@@ -65,15 +78,24 @@ input[type='email']:focus{
     outline: none;
     /*box-shadow: 0 0 3pt 2pt #2d57bb;*/
 }
+label{
+    font-weight: bold;
+    font-size: 1.15em;
+    margin-top: 80px;
+}
 /*buttons*/
 .custom-btn-yellow{
     background-color: #F2C03C;
     color: #272C80;
-    border: 1px solid #272c80;
-    padding: 10px 15px;
+    border: 1px solid #F2C03C;
+    padding: 15px;
     display: inline-block;
     transition: 0.2s;
     border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 300px;
+    text-align: center;
 }
 .custom-btn-yellow:hover{
     background-color: #272C80;
@@ -87,7 +109,6 @@ input[type='email']:focus{
     background-color: #FBDC8B;
     color: #272C80;
     outline: none;
-    /*box-shadow: 0 0 3pt 2pt #2d57bb;*/
 }
 /* Gestion des placeholders */
 input:focus::-webkit-input-placeholder { color:transparent; }
@@ -95,9 +116,156 @@ input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
+
+
+/***
+HEADER
+***/
+header{
+    text-align: center;
+}
+header img{
+    width: 100%;
+    max-width: 500px;
+    margin: 50px 0;
+}
+.separateur{
+    border-radius: 10px;
+    background-color: #2d57bb;
+    width: 100%;
+    height: 14px;
+}
+/***
+SECTION
+***/
+section{
+    margin: 70px 0;
+}
+
+/***
+ABOUT US
+***/
+#about-us{
+    height: calc(100vh - 268px);
+    position: relative;
+    margin-top: 50px;
+}
+#about-us .container-picto{
+    text-align: right;
+}
+#about-us .container-picto img{
+    width: 370px;
+}
+#about-us span{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-weight: bold;
+    font-size: 2em;
+}
+#about-us .cts{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 30px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/***
+QUOTAS
+***/
+#test-quota{
+    margin-top: 50px;
+    border: 4px solid #f2c03c;
+    padding: 50px 20px;
+    position: relative;
+    border-radius: 12px;
+}
+#test-quota img{
+    max-width: 100%;
+}
+#test-quota #calculQuota{
+    margin: 180px auto 0 auto;
+}
+#test-quota img{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+}
+
+/***
+STEPS
+***/
+#steps .step{
+    border: 4px solid #f2c03c;
+    border-radius: 12px;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: bold;
+    height: 500px;
+    position: relative;
+}
+#steps .step .number{
+    width: 90px;
+    margin-bottom: 15px;
+}
+#steps .step .ornement{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 150px;
+    opacity: 0.85;
+}
+/***
+CONVERSION
+***/
+#conversion{
+    background-color: #272c80;
+
+    padding: 80px 0;
+}
+#conversion p,#conversion h2,#conversion label,#conversion strong{
+    color:white;
+}
+#conversion p{
+    text-align: center;
+}
+#conversion label{
+    display: block;
+}
+#conversion input[type='email'],.email-error-icon{
+    width: 100%;
+    max-width: none;
+}
+#conversion input[type='email']{
+    margin-top: 70px;
+}
+#validateContactForm{
+    margin: 60px auto 0 auto;
+    display: block;
+}
 .label-checkbox{
     position: relative;
     vertical-align: middle;
+    margin-top: 30px;
+    font-weight: normal;
 }
 .label-checkbox:focus{
     outline: none;
@@ -130,18 +298,6 @@ input[type='checkbox']{
     padding-right: 50px;
 }
 #email-error-icon:after{
-    /*font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f00d";
-    display: inline-block;
-    position: absolute;
-    bottom: -8px;
-    right: 9px;
-    color: #ffffff;
-    background: red;
-    border-radius: 50%;
-    padding: 0px 10px;
-    font-size: 24px;*/
     content: "";
     width: 43px;
     height: 43px;
@@ -159,32 +315,6 @@ input[type='checkbox']{
 .show-after:after{
     position: relative;
     opacity: 1!important;
-}
-
-/***
-HEADER
-***/
-header{
-    background-color: lightgrey;
-    text-align: center;
-}
-
-/***
-SECTION
-***/
-section{
-    padding-top: 50px;
-}
-.section-blue{
-    background: #272c80;
-    color: white;
-}
-
-/***
-QUOTAS
-***/
-#test-quota img{
-    max-width: 100%;
 }
 
 /***
@@ -307,12 +437,6 @@ MODULE ACCESSIBILITE
     border: 1px solid black;
 }
 
-/*#module-accessibilite .close{
-    display: block;
-    float: right;
-    border:1px solid black;
-    padding: 10px 13px;
-}*/
 #module-accessibilite button{
     background-color: #272c80;
     color: #F2C03C;

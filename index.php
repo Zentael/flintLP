@@ -39,77 +39,95 @@
         <?php include 'includes/module-accessibilite.php'; ?>
         <?php include 'includes/header.php'; ?>
 
+
+
         <main>
             <section id="about-us" class="container">
-                <h1>Les héros de votre entreprise</h1>
-                <p>Nous constatons aujourd’hui que malgré les réformes mises en places encore 20% des personnes handicapés n’ont pas d’activité professionnelle soit deux fois plus que les personnes ne souffrant pas d'un handicap.
-                    En créant Handi-cape nous voulons agir en mettant la technologie au service de ceux qui en ont besoin.
+                <h1>La plateforme dont vous rêviez</h1>
+                <p>Handi-cape est <strong>une plateforme de mise en relation</strong> entre les recruteurs et les personnes souffrant<br> d’un handicap moteur ou psychique. <strong>Elle est pensée pour vous et vos besoins.</strong><br>
+                    <strong>Ne perdez plus de temps</strong> en sourcing intensif pour trouver <strong>la perle rare des candidats</strong>, car ils sont tous </br>sur <strong>Handicape.fr</strong>.
                 </p>
-
-                <br><br>
-                <a href="#video" title="Lien vers le contenu principal" class="custom-btn-yellow">En savoir plus</a>
+                <div class="container-picto">
+                    <img src="assets/img/picto-responsive.svg" alt="Pictogramme">
+                </div>
+                <span>En savoir plus</span>
+                <img class="cts" src="assets/img/arrow-down.svg" alt="Descendre pour voir le suite">
             </section>
 
             <section id="video" class="container">
+                <h2>Quelques chiffres</h2>
                 <div class="container-iframe">
                     <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo de présentation de Handicape"></iframe>
                 </div>
             </section>
 
             <section id="test-quota" class="container">
-                <h2>Est-ce que votre entreprise respecte les quotas ?</h2>
+                <h2>Est-ce que mon entreprise respecte les quotas ?</h2>
                 <div class="row">
                     <article class="col-sm-6">
-                        <p>En France, la loi oblige les entreprises a atteindre un quota de 6% de travailleurs handicapés. Les sanctions peuvent aller jusqu'à 600 fois le montant du S.M.I.C. Cependant en France, le taux moyen est de 3.6% dans le privé et 4.9% dans le public.</p>
                         <label for="effectif">Nombre de personnes dans votre entreprise ?</label>
                         <input type="text" id="effectif" placeholder="ex: 300">
                         <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
                         <input type="text" id="handicap" placeholder="ex: 25">
-                        <button class="custom-btn-yellow" id="calculQuota">Faire le test</button>
                     </article>
                     <article class="col-sm-6">
-                        <!--<p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>-->
-                        <img src="assets/img/try.png" id="resultQuota" alt="Vous êtes en dessous des quotas">
+                        <p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>
                     </article>
+                    <button class="custom-btn-yellow" id="calculQuota">Je calcule</button>
                 </div>
+                <img src="assets/img/skyscraper-jaune.svg" alt="Gratte Ciels">
             </section>
 
             <section id="steps" class="container">
-                <h2>En 3 étapes</h2>
+                <h2>En 3 étapes seulement</h2>
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <div class="step">Inscrivez-vous</div>
+
+                        <div class="step">
+                            <img class="number" src="assets/img/one.svg" alt="Première étape">
+                            <p>Inscrivez-vous</p>
+                            <p>S’inscrire sur notre plateforme vous permetra de voir tous nos profils spécialement sélectionnés pour vous</p>
+                            <img class="ornement" src="assets/img/contract%20tricolor-v2.svg" alt="Inscription rapide">
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="step">Trouvez le meilleurs profils</div>
+                        <div class="step">
+                            <img class="number" src="assets/img/two.svg" alt="Deuxième étape">
+                            <p>Trouvez le meilleur profil</p>
+                            <p>Grâce a notre sélection  ne perdez pas de temps pour trouver le profil qui vous correspond !Handicape se charge du reste</p>
+                            <img class="ornement" src="assets/img/people-tricolor-v2.svg" alt="Les meilleurs candidats">
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="step">Recrutez en toute sérénité</div>
+                        <div class="step">
+                            <img class="number" src="assets/img/three.svg" alt="Dernière étape">
+                            <p>Boostez votre entreprise</p>
+                            <p>Fini les pertes de temps, votre planning s’allège grâce à Handicape !</p>
+                            <img class="ornement" src="assets/img/increased-tricolor-v2.svg" alt="Boostez votre entreprise">
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="conversion" class="container section-blue">
-                <h2>Ne ratez pas la sortie de la plateforme handi-cape</h2>
-                <p>Vous voulez jouer un rôle dans cette révolution ? Partagez le lien et rejoignez nous sur les réseaux sociaux.</p>
-                <p>Politique d’utilisation des données : Votre email sera utilisé dans le seul but de vous informer de la sortie du site handi-cape. Il sera supprimé de nos bases de données dès que nous vous aurons informé du lancement de la plateforme.</p>
-                <div id="formResponse"></div>
-                <form action="" method="POST">
-                    <label for="email">Votre adresse email</label>
-                    <br><br>
-                    <span id="email-error-icon">
-                        <input type="email" id="email" name="mail" placeholder="Votre adresse email">
-                    </span>
-                    <br>
-                    <span class="error-email"></span>
-                    <br><br>
-                    <input type="checkbox" id="check-box" hidden>
-                    <label tabindex="0" class="label-checkbox" for="check-box">Respecte la RGPD frr</label>
-                    <br>
-                    <span class="error-checkbox"></span>
-                    <br><br>
-                    <input type="submit" id="validateContactForm" class="custom-btn-yellow" tabindex="0" value="Je souhaite être informé">
-                </form>
+            <section id="conversion">
+                <div class="container">
+                    <h2>Ne ratez pas la sortie de Handicape.fr</h2>
+                    <p>Inscrivez-vous pour être informé de la sortie du site.</p>
+                    <div id="formResponse"></div>
+                    <form action="" method="POST">
+                        <label for="email" hidden>Votre adresse email</label>
+                        <span id="email-error-icon">
+                            <input type="email" id="email" name="mail" placeholder="Votre adresse email">
+                         </span>
+                        <span class="error-email"></span>
+                        <input type="checkbox" id="check-box" hidden>
+                        <label tabindex="0" class="label-checkbox" for="check-box">Dans le cadre de la loi RGPD, nous vous informons que votre adresse mail sera utilisée dans le seul but de vous informer de la sortie du site : <strong>handicape.fr</strong><br>
+                            Votre adresse mail sera supprimée automatiquement de notre base de données par la suite.</label>
+                        <span class="error-checkbox"></span>
+                        <input type="submit" id="validateContactForm" class="custom-btn-yellow" tabindex="0" value="Je souhaite être informé">
+                    </form>
+                </div>
+            </section>
 
                 <h2>Vous croyez en nous ? Faites le savoir !</h2>
                 <div id="share-buttons">
@@ -122,7 +140,7 @@
                     <!-- Twitter -->
                     <a href="https://twitter.com/share?url=<?php echo $actual_link ?>&amp;text=Découvrez%20Handi-cape&amp;hashtags=handicape" target="_blank" title="Partager sur Twitter"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
                 </div>
-            </section>
+
 
             <!--<div id="temoignages" class="container">
                 <h2>Ils vous parlent de nous</h2>
