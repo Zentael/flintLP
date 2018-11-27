@@ -3,23 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="index,follow"> <!-- référencement-->
-        <meta name="author" content="Handi-cape">
-        <meta name="description" content="Description du site">  <!-- 140 char -->
+        <meta name="author" content="Handicape">
+        <meta name="description" content="Handicape, la plateforme innovante pour recruter votre prochain collaborateur souffrant d'un handicape. Aucune chance de vous tromper dans votre choix.">  <!-- 140 char -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Handi-cape</title>
 
         <meta name="twitter:card" content="summary" >
         <meta name="twitter:site" content="" > <!--url de notre site-->
-        <meta name="twitter:title" content="Handi-cape" >
+        <meta name="twitter:title" content="Handicape" >
         <meta name="twitter:description" content="Description du site" >
-        <meta name="twitter:creator" content="@Handi-cape" >
+        <meta name="twitter:creator" content="@Handicape" >
         <meta name="twitter:image:src" content="" > <!--Image carré du logo-->
-        <meta property="og:title" content="Handi-cape" >
+        <meta property="og:title" content="Handicape" >
         <meta property="og:type" content="website" >
         <meta property="og:url" content="" > <!--Notre url-->
         <meta property="og:image" content="" > <!--Image carré du logo-->
         <meta property="og:description" content="Description du site" >
-        <meta property="og:site_name" content="Handi-cape" >
+        <meta property="og:site_name" content="Handicape" >
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -38,7 +38,7 @@
     <body>
         <?php include 'includes/module-accessibilite.php'; ?>
         <?php include 'includes/header.php'; ?>
-        
+
         <main>
             <section id="about-us" class="container">
                 <h1>La plateforme dont vous rêviez</h1>
