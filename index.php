@@ -38,9 +38,7 @@
     <body>
         <?php include 'includes/module-accessibilite.php'; ?>
         <?php include 'includes/header.php'; ?>
-
-
-
+        
         <main>
             <section id="about-us" class="container">
                 <h1>La plateforme dont vous rêviez</h1>
