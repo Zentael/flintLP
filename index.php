@@ -113,7 +113,7 @@
                     <p>Inscrivez-vous pour être informé de la sortie du site.</p>
                     <div id="formResponse"></div>
                     <form action="" method="POST">
-                        <label for="email" hidden>Votre adresse email</label>
+                        <label for="email">Votre adresse email</label>
                         <span id="email-error-icon">
                             <input type="email" id="email" name="mail" placeholder="Votre adresse email">
                          </span>

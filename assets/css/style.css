@@ -260,9 +260,6 @@ CONVERSION
 #email-error-icon{
     display: block;
 }
-#conversion input[type='email']{
-    margin-top: 70px;
-}
 #validateContactForm{
     margin: 60px auto 0 auto;
     display: block;
