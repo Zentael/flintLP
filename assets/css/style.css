@@ -130,7 +130,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .section-bleu label,
 .section-bleu strong,
 .section-bleu .error-checkbox,
-.section-bleu .error-email,
 .section-bleu .errorContact{
     color:white!important;
 }
@@ -231,6 +230,28 @@ QUOTAS
 #test-quota #resultQuota{
     margin-top: 80px;
 }
+#icon-incoherent,#icon-valid,#icon-wrong{
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+#icon-incoherent i,
+#icon-valid i,
+#icon-wrong i{
+    background: #f0ad4e;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+#icon-valid i{
+    background: #5cb85c;
+}
+#icon-wrong i{
+    background: #d9534f;
+}
 
 /***
 STEPS
@@ -238,7 +259,7 @@ STEPS
 #steps .step{
     border: 4px solid #f2c03c;
     border-radius: 12px;
-    padding: 10px 40px;
+    padding: 10px 20px;
     text-align: center;
     font-weight: bold;
     height: 550px;
@@ -345,6 +366,9 @@ input[type='checkbox']{
 .show-after:after{
     position: relative;
     opacity: 1!important;
+}
+.error-checkbox,.error-email,.section-bleu .error-checkbox,.section-bleu .error-email{
+    color: #d9534f!important;
 }
 
 /***
@@ -555,7 +579,7 @@ MODULE ACCESSIBILITE
         margin: 0 50px;
     }
     #steps .step {
-        padding: 10px 20px;
+        padding: 7px 0px;
         height: 575px;
     }
     #test-quota img {

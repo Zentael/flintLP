@@ -18,23 +18,30 @@ btnQuota.onclick = function (){
     const nbEmployesHandi = inputEmployesHandi.value;
     const result = document.getElementById('resultQuota');
 
-
     if (Number(nbEmployes) < Number(nbEmployesHandi)){
-        //result.style.backgroundColor = "red";
+        document.getElementById('icon-incoherent').style.display = "block";
+        document.getElementById('icon-valid').style.display = "none";
+        document.getElementById('icon-wrong').style.display = "none";
         return result.innerText = "Le calcul est incohérent, vérifiez et réessayez !";
-        //return result.setAttribute("src", "assets/img/incoherent.png");
     }
     var nbQuota = nbEmployes/(50/3) - nbEmployesHandi;
     nbQuota = Math.ceil(nbQuota);
     if (nbQuota > 0){
+        document.getElementById('icon-incoherent').style.display = "none";
+        document.getElementById('icon-valid').style.display = "none";
+        document.getElementById('icon-wrong').style.display = "block";
         result.innerText = "Votre entreprise ne rempli pas les quotas, Handicape.fr est fait pour vous ! N'oubliez pas de vous inscrire pour être informé de la mise en ligne de la plateforme.";
-        //result.setAttribute("src", "assets/img/no.png");
     }
     else {
+        document.getElementById('icon-incoherent').style.display = "none";
+        document.getElementById('icon-valid').style.display = "block";
+        document.getElementById('icon-wrong').style.display = "none";
         result.innerText = "Félicitations, le nombre de travailleurs handicapés dans votre entreprise est supérieur aux quotas légaux ! Handicape.fr sera votre meilleur ami pour vos futurs recrutements.";
-        //result.setAttribute("src", "assets/img/yes.png");
     }
     if((nbEmployes == '')||(nbEmployes == 0)){
+        document.getElementById('icon-incoherent').style.display = "block";
+        document.getElementById('icon-valid').style.display = "none";
+        document.getElementById('icon-wrong').style.display = "none";
         return result.innerText = "Le calcul est incohérent, vérifiez et réessayez !";
     }
 }
@@ -62,7 +69,7 @@ $('#validateContactForm').click(function (e) {
     }
     else{
         //$('#email-error-icon').effect( 'shake' );
-        $( '.error-email' ).text( 'L\'email est oligatoire' );
+        $( '.error-email' ).text( 'L\'email est obligatoire' );
         $( '#email-error-icon' ).addClass('show-after');
     }
     //Test Checkbox
@@ -74,7 +81,7 @@ $('#validateContactForm').click(function (e) {
     }
     else{
         //$( '.label-checkbox' ).effect( 'shake' );
-        $( '.error-checkbox' ).text( 'La checkbox est oligatoire' );
+        $( '.error-checkbox' ).text( 'La checkbox est obligatoire' );
     }
     //vérifier si XMLHttpRequest() est interprété par tous les navigateurs cf; activeXObject()...
     xhttp.onreadystatechange = function() {

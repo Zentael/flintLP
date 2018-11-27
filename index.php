@@ -82,6 +82,9 @@
                             <input type="text" id="handicap" placeholder="ex: 25">
                         </article>
                         <article class="col-sm-6">
+                            <p id="icon-incoherent"><i class="fas fa-exclamation"></i></p>
+                            <p id="icon-valid"><i class="far fa-smile-beam"></i></p>
+                            <p id="icon-wrong"><i class="far fa-frown"></i></p>
                             <p id="resultQuota">Faites le calcul pour connaître l'état de votre entreprise en matière de recrutement de travailleurs handicapés</p>
                         </article>
                         <button class="custom-btn-yellow" id="calculQuota">Je calcule</button>
