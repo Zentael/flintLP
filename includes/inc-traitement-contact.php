@@ -17,7 +17,7 @@
                 while($donnees = $reponse->fetch()):
                     if($donnees['email'] == $_GET['mail'] ){
                         $doublon++;
-                        echo "<span class='errorContact'>Cet email est déjà inscrit</span>";
+                        echo "<span class='errorContact'>Cet email est déjà inscrit dans notre base.</span>";
                         break;
                     }
                 endwhile;
