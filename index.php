@@ -71,7 +71,7 @@
                         <input type="text" id="handicap" placeholder="ex: 25">
                     </article>
                     <article class="col-sm-6">
-                        <p id="resultQuota">Calculez votre nombre d'handicapés restant pour remplir votre quota !</p>
+                        <p id="resultQuota">Faites le calcul pour connaître l'état de votre entreprise en matière de recrutement de travailleurs handicapés</p>
                     </article>
                     <button class="custom-btn-yellow" id="calculQuota">Je calcule</button>
                 </div>

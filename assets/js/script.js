@@ -14,28 +14,29 @@ inputEmployesHandi.oninput = function(){
 }
 
 btnQuota.onclick = function (){
-
     const nbEmployes = inputEmployes.value;
     const nbEmployesHandi = inputEmployesHandi.value;
     const result = document.getElementById('resultQuota');
 
+
     if (Number(nbEmployes) < Number(nbEmployesHandi)){
         //result.style.backgroundColor = "red";
-        //return result.innerText = "Je crois que vous vous êtes trompés dans vos chiffres, vérifiez et réessayez !";
-        return result.setAttribute("src", "assets/img/incoherent.png");
+        return result.innerText = "Le calcul est incohérent, vérifiez et réessayez !";
+        //return result.setAttribute("src", "assets/img/incoherent.png");
     }
-
     var nbQuota = nbEmployes/(50/3) - nbEmployesHandi;
     nbQuota = Math.ceil(nbQuota);
-
     if (nbQuota > 0){
-        //result.innerText = "Vous êtes à " + nbQuota + " handicapés de remplir votre Quota !";
-        result.setAttribute("src", "assets/img/no.png");
-    } else {
-        //result.innerText = "Félicitations, vous avez déjà rempli votre quota !";
-        result.setAttribute("src", "assets/img/yes.png");
+        result.innerText = "Votre entreprise ne rempli pas les quotas, Handicape.fr est fait pour vous ! N'oubliez pas de vous inscrire pour être informé de la mise en ligne de la plateforme.";
+        //result.setAttribute("src", "assets/img/no.png");
     }
-    console.log(nbQuota);
+    else {
+        result.innerText = "Félicitations, le nombre de travailleurs handicapés dans votre entreprise est supérieur aux quotas légaux ! Handicape.fr sera votre meilleur ami pour vos futurs recrutements.";
+        //result.setAttribute("src", "assets/img/yes.png");
+    }
+    if((nbEmployes == '')||(nbEmployes == 0)){
+        return result.innerText = "Le calcul est incohérent, vérifiez et réessayez !";
+    }
 }
 
 /* AJAX VALIDATION DU FORMULAIRE DE CONTACT */

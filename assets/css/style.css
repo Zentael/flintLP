@@ -208,6 +208,9 @@ QUOTAS
     right: 20px;
     width: 300px;
 }
+#test-quota #resultQuota{
+    margin-top: 80px;
+}
 
 /***
 STEPS
@@ -399,6 +402,7 @@ MODULE ACCESSIBILITE
     position: relative;
     text-align: center;
     margin-bottom: 10px;
+    display: block;
 }
 .btn-switch .switch-base{
     position: absolute;
@@ -428,10 +432,14 @@ MODULE ACCESSIBILITE
     transform: translate(-50%,-50%);
     transition: 0.2s;
 }
+#module-accessibilite .btn-switch{
+    margin: 10px!important;
+}
 #module-accessibilite h2{
     background: #272c80;
     color: white;
     padding: 10px 0;
+    text-align: center!important;
 }
 #module-accessibilite .zone-accessibilite{
     background: white;
@@ -500,4 +508,110 @@ MODULE ACCESSIBILITE
 }
 .element-accessibilite:hover{
     border: 2px solid #272c80;
+}
+
+/* Legals */
+#legals h2{
+    text-align: left;
+}
+#legals .btn-switch{
+    max-width: 310px;
+    margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 992px) {
+    #about-us .container-picto img {
+        width: 300px;
+    }
+    #reseaux #share-buttons a{
+        display: inline-block;
+        margin: 0 50px;
+    }
+    #steps .step {
+        padding: 10px 20px;
+        height: 575px;
+    }
+    #test-quota img {
+        width: 170px;
+    }
+    #test-quota #calculQuota {
+        margin: 100px auto 0 auto;
+    }
+    label {
+        margin-top: 40px;
+    }
+    #test-quota #resultQuota {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #about-us .container-picto img {
+        width: 200px;
+    }
+    #test-quota #calculQuota {
+        margin: 50px auto 0 auto;
+    }
+    #test-quota img {
+        display: none;
+    }
+    #steps .step {
+        height: 430px;
+        margin-bottom: 15px;
+    }
+    #reseaux #share-buttons a {
+        margin: 0 30px;
+    }
+    .cta-accessibilite{
+        display: none;
+    }
+    #reseaux {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    header img {
+        margin: 20px 0;
+    }
+    #about-us {
+        height: auto;
+        margin-top: 20px;
+    }
+    #about-us span,#about-us .cts {
+        display: none;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    #about-us .container-picto img {
+        display: none;
+    }
+    #steps .step {
+        height: 450px;
+    }
+    #reseaux #share-buttons a {
+        margin: 0px 15px;
+    }
+    #reseaux #share-buttons a span {
+        font-size: 20px;
+    }
+    #reseaux #share-buttons a i {
+        font-size: 60px;
+    }
+    #about-us span {
+        bottom: 80px;
+    }
+    #about-us .cts {
+        bottom: 40px;
+    }
+    #steps .step .ornement {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 352px){
+    #reseaux #share-buttons a {
+        margin: 0px 10px;
+    }
+    #reseaux #share-buttons a span {
+        font-size: 16px;
+    }
 }

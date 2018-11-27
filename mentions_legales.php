@@ -16,13 +16,16 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body id="legals">
     <?php include 'includes/module-accessibilite.php'; ?>
     <?php include 'includes/header.php'; ?>
 
         <section class="container">
 
-            <a href="index.php" title="Retourner au site">Retourner au site</a>
+            <a href="index.php" title="Retourner au site" class="btn-switch">
+                <span class="switch-base">Retourner au site</span>
+                <span class="switch-hover"><i class="fas fa-arrow-left"></i></span>
+            </a>
 
             <article>
                 <h2>Editeur du site</h2>
