@@ -55,11 +55,9 @@
                             </div>
                         </div>
                     </div>
-
-
                     <a href="#video" class="cts">
                         <span>En savoir plus</span>
-                       <img src="assets/img/arrow-down.svg" alt="Descendre pour voir le suite">
+                       <img src="assets/img/arrow-down-white.svg" alt="Descendre pour voir le suite">
                     </a>
                 </div>
             </section>
