@@ -21,7 +21,7 @@
                 <form action="" method="POST">
                     <label for="nom">Nom</label><br>
                     <input type="text" id="nom" name="nom" placeholder="Votre nom"><br>
-                    <span class="error-nom"></span>
+                    <span class="error-nom" style="display: none"></span>
                     <br><br>
                     <label for="prenom">Prenom</label><br>
                     <input type="text" id="prenom" name="prenom" placeholder="Votre prenom"><br>
@@ -31,14 +31,17 @@
                     <input type="email" id="email" name="mail" placeholder="Votre adresse email"><br>
                     <span class="error-email"></span>
                     <br><br>
-
-                    <input type="submit" id="validateContactForm" class="custom-btn-yellow" tabindex="0" value="Je m'inscrit">
+                    <label for="motivation">Vos motivations</label><br>
+                    <textarea id="motivation" name="motivation" placeholder="Vos motivations" cols="30" rows="10"></textarea><br>
+                    <span class="error-motivation"></span>
+                    <br><br>
+                    <input type="submit" id="submit-inscription" class="custom-btn-yellow" tabindex="0" value="Je m'inscrit">
                 </form>
             </div>
 
         </main>
 
         <?php include 'includes/footer.php'; ?>
-
+        <script src="assets/js/inscription-travailleurs-ajax.js"></script>
     </body>
 </html>
