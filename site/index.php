@@ -1,57 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index,follow"> <!-- référencement-->
+        <meta name="author" content="Handicape">
+        <meta name="description" content="Handicape, la plateforme innovante pour recruter votre prochain collaborateur souffrant d'un handicape. Aucune chance de vous tromper dans votre choix.">  <!-- 140 char -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Handi-cape</title>
+        <?php include 'includes/include-head.php'; ?>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <body>
+    <?php include 'includes/module-accessibilite.php'; ?>
+    <?php include 'includes/header.php'; ?>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-</head>
+    <main>
+        <h1>Main</h1>
+    </main>
 
-<body>
-    <div class="container">
-        <h1 class="bow">Main title</h1>
+    <?php include 'includes/footer.php'; ?>
 
-        <h2 class="bow">Second title</h2>
-
-        <p class="p1 bow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae tellus vulputate lacinia. Nullam mattis sagittis orci, ac varius lorem varius non. Integer cursus semper venenatis. Curabitur nibh lorem, scelerisque quis aliquam quis, sagittis non nisi. Nunc nulla metus, semper vitae nunc vel, pretium bibendum purus. Sed eget ligula quis mi faucibus faucibus a eget lectus. Fusce consequat massa a tortor ultrices, et sodales mauris malesuada. Vestibulum dolor ante, aliquet sit amet ligula sed, egestas placerat felis. In ullamcorper erat eu mollis semper. Praesent tortor risus, eleifend id gravida ut, mollis congue justo. Quisque consectetur nibh id egestas sollicitudin.</p>
-
-        <p class="p2 bow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem vitae tellus vulputate lacinia. Nullam mattis sagittis orci, ac varius lorem varius non. Integer cursus semper venenatis. Curabitur nibh lorem, scelerisque quis aliquam quis, sagittis non nisi. Nunc nulla metus, semper vitae nunc vel, pretium bibendum purus. Sed eget ligula quis mi faucibus faucibus a eget lectus. Fusce consequat massa a tortor ultrices, et sodales mauris malesuada. Vestibulum dolor ante, aliquet sit amet ligula sed, egestas placerat felis. In ullamcorper erat eu mollis semper. Praesent tortor risus, eleifend id gravida ut, mollis congue justo. Quisque consectetur nibh id egestas sollicitudin.</p>
-
-        <div class="row">
-            <div class="col-4">
-                <div class="fiche">
-                    <div class="photo"></div>
-                    <div class="nom">Jean-Michel</div>
-                    <div class="job">Consultant</div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="fiche">
-                    <div class="photo"></div>
-                    <div class="nom">Pierre</div>
-                    <div class="job">Graphiste</div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="fiche">
-                    <div class="photo"></div>
-                    <div class="nom">Luc</div>
-                    <div class="job">Chef de Projet</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="floaty">
-        <button class="changeSize decrease">Font -</button><button class="changeSize increase">Font +</button>
-        <br><br>
-        <button class="visual">Troubles visuels</button>
-    </div>
-
-
-    <script src="assets/js/script.js"></script>
-</body>
-
+    </body>
 </html>

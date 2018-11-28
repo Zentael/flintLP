@@ -288,6 +288,13 @@ CONVERSION
 #conversion{
     padding: 80px 0;
 }
+#conversion p,#conversion h2,#conversion label,#conversion strong,#conversion .error-checkbox,#conversion .error-email,#conversion .errorContact{
+    color:white;
+}
+#conversion .errorContact{
+    padding: 10px;
+    border: 1px solid white;
+}
 #formResponse{
     text-align: center;
 }
