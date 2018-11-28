@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
         <link rel="shortcut icon" href="assets/img/logo.ico">
@@ -40,19 +40,28 @@
         <?php include 'includes/header.php'; ?>
 
         <main>
-            <section id="about-us" class="container">
-                <h1>La plateforme dont vous rêviez</h1>
-                <p>Handi-cape est <strong>une plateforme de mise en relation</strong> entre les recruteurs et les personnes souffrant<br> d’un handicap moteur ou psychique. <strong>Elle est pensée pour vous et vos besoins.</strong><br>
-                    <strong>Ne perdez plus de temps</strong> en sourcing intensif pour trouver <strong>la perle rare des candidats</strong>, car ils sont tous </br>sur <strong>Handicape.fr</strong>.
-                </p>
-                <div class="container-picto">
-                    <img src="assets/img/picto-responsive.svg" alt="Pictogramme">
-                </div>
-                <a href="#video" class="cts">
-                    <span>En savoir plus</span>
-                   <img src="assets/img/arrow-down.svg" alt="Descendre pour voir le suite">
-                </a>
+            <section id="about-us" class="section-bleu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><h1>La plateforme dont vous rêviez</h1></div>
+                        <div class="col-12 col-md-6">
+                            <p>Handi-cape est <strong>une plateforme de mise en relation</strong> entre les recruteurs et les personnes souffrant<br> d’un handicap moteur ou psychique. <strong>Elle est pensée pour vous et vos besoins.</strong><br>
+                                <strong>Ne perdez plus de temps</strong> en sourcing intensif pour trouver <strong>la perle rare des candidats</strong>, car ils sont tous </br>sur <strong>Handicape.fr</strong>.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="container-picto">
+                                <img src="assets/img/picto-responsive.svg" alt="Pictogramme">
+                            </div>
+                        </div>
+                    </div>
 
+
+                    <a href="#video" class="cts">
+                        <span>En savoir plus</span>
+                       <img src="assets/img/arrow-down.svg" alt="Descendre pour voir le suite">
+                    </a>
+                </div>
             </section>
 
             <section id="video" class="container">
@@ -62,55 +71,68 @@
                 </div>
             </section>
 
-            <section id="test-quota" class="container">
-                <h2>Est-ce que mon entreprise respecte les quotas ?</h2>
-                <div class="row">
-                    <article class="col-sm-6">
-                        <label for="effectif">Nombre de personnes dans votre entreprise ?</label>
-                        <input type="text" id="effectif" placeholder="ex: 300">
-                        <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
-                        <input type="text" id="handicap" placeholder="ex: 25">
-                    </article>
-                    <article class="col-sm-6">
-                        <p id="resultQuota">Faites le calcul pour connaître l'état de votre entreprise en matière de recrutement de travailleurs handicapés</p>
-                    </article>
-                    <button class="custom-btn-yellow" id="calculQuota">Je calcule</button>
+            <section>
+                <div id="test-quota" class="container section-bleu">
+                    <h2>Est-ce que mon entreprise respecte les quotas ?</h2>
+                    <div class="row">
+                        <article class="col-sm-6">
+                            <label for="effectif">Nombre de personnes dans votre entreprise ?</label>
+                            <input type="text" id="effectif" placeholder="ex: 300">
+                            <label for="handicap">Nombre de travailleurs handicapés dans votre entreprise ?</label>
+                            <input type="text" id="handicap" placeholder="ex: 25">
+                        </article>
+                        <article class="col-sm-6">
+                            <p id="resultQuota">Faites le calcul pour connaître l'état de votre entreprise en matière de recrutement de travailleurs handicapés</p>
+                        </article>
+                        <button class="custom-btn-yellow" id="calculQuota">Je calcule</button>
+                    </div>
+                    <img src="assets/img/skyscraper-jaune.svg" alt="Gratte Ciels">
                 </div>
-                <img src="assets/img/skyscraper-jaune.svg" alt="Gratte Ciels">
             </section>
 
             <section id="steps" class="container">
                 <h2>En 3 étapes seulement</h2>
                 <div class="row">
                     <div class="col-12 col-md-4">
-
-                        <div class="step">
-                            <img class="number" src="assets/img/one.svg" alt="Première étape">
-                            <p>Inscrivez-vous</p>
-                            <p>S’inscrire sur notre plateforme vous permetra de voir tous nos profils spécialement sélectionnés pour vous</p>
-                            <img class="ornement" src="assets/img/contract%20tricolor-v2.svg" alt="Inscription rapide">
+                        <div class="step row">
+                            <div class="col-12 col-xs-6 col-md-12">
+                                <img class="number" src="assets/img/one.svg" alt="Première étape">
+                                <p class="title">Inscrivez-vous</p>
+                                <p>S’inscrire sur notre plateforme vous permetra de voir tous nos profils spécialement sélectionnés pour vous</p>
+                            </div>
+                            <div class="col-12 col-xs-6 col-md-12">
+                                <img class="ornement" src="assets/img/contract%20tricolor-v2.svg" alt="Inscription rapide">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="step">
-                            <img class="number" src="assets/img/two.svg" alt="Deuxième étape">
-                            <p>Trouvez le meilleur profil</p>
-                            <p>Grâce a notre sélection  ne perdez pas de temps pour trouver le profil qui vous correspond !Handicape se charge du reste</p>
-                            <img class="ornement" src="assets/img/people-tricolor-v2.svg" alt="Les meilleurs candidats">
+                        <div class="step row">
+                            <div class="col-12 col-xs-6 col-md-12">
+                                <img class="number" src="assets/img/two.svg" alt="Deuxième étape">
+                                <p class="title">Trouvez le meilleur profil</p>
+                                <p>Grâce a notre sélection  ne perdez pas de temps pour trouver le profil qui vous correspond !Handicape se charge du reste</p>
+                            </div>
+                            <div class="col-12 col-xs-6 col-md-12">
+                                <img class="ornement" src="assets/img/people-tricolor-v2.svg" alt="Les meilleurs candidats">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="step">
-                            <img class="number" src="assets/img/three.svg" alt="Dernière étape">
-                            <p>Boostez votre entreprise</p>
-                            <p>Fini les pertes de temps, votre planning s’allège grâce à Handicape !</p>
-                            <img class="ornement" src="assets/img/increased-tricolor-v2.svg" alt="Boostez votre entreprise">
+                        <div class="step row">
+                            <div class="col-12 col-xs-6 col-md-12">
+                                <img class="number" src="assets/img/three.svg" alt="Dernière étape">
+                                <p class="title">Boostez votre entreprise</p>
+                                <p>Fini les pertes de temps, votre planning s’allège grâce à Handicape !</p>
+                            </div>
+                            <div class="col-12 col-xs-6 col-md-12">
+                                <img class="ornement" src="assets/img/increased-tricolor-v2.svg" alt="Boostez votre entreprise">
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="conversion">
+            <section id="conversion" class="section-bleu">
                 <div class="container">
                     <h2>Ne ratez pas la sortie de Handicape.fr</h2>
                     <p>Inscrivez-vous pour être informé de la sortie du site.</p>

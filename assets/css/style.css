@@ -15,12 +15,15 @@ h1,h2,h3,h4,h5,h6{
 h1{
     font-size: 3em;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 h2{
     text-align: center;
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 2em;
+    text-transform: uppercase;
 }
 p{
     font-size: 1.15em;
@@ -116,7 +119,21 @@ input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
+.section-bleu{
+    background-color: #272c80;
+}
 
+.section-bleu span,
+.section-bleu h1,
+.section-bleu p,
+.section-bleu h2,
+.section-bleu label,
+.section-bleu strong,
+.section-bleu .error-checkbox,
+.section-bleu .error-email,
+.section-bleu .errorContact{
+    color:white!important;
+}
 
 /***
 HEADER
@@ -139,19 +156,21 @@ header img{
 SECTION
 ***/
 section{
-    margin: 70px 0;
+    padding: 50px 0;
 }
 
 /***
 ABOUT US
 ***/
 #about-us{
-    height: calc(100vh - 268px);
+    height: calc(100vh - 204px);
     position: relative;
-    margin-top: 50px;
+    margin-top: 0;
+    padding-top: 50px;
 }
 #about-us .container-picto{
     text-align: right;
+    margin-top: 120px;
 }
 #about-us .container-picto img{
     width: 370px;
@@ -165,9 +184,9 @@ ABOUT US
     position: absolute;
     bottom: 30px;
     left: 50%;
-    width: 200px;
+    width: 300px;
     text-align: center;
-    margin-left: -100px;
+    margin-left: -150px;
     animation: float 3s ease-in-out infinite;
 }
 #about-us .cts img{
@@ -222,8 +241,13 @@ STEPS
     padding: 10px 40px;
     text-align: center;
     font-weight: bold;
-    height: 500px;
+    height: 550px;
     position: relative;
+    margin: 0px!important;
+}
+#steps .step .title{
+    font-weight: bold;
+    text-transform: uppercase;
 }
 #steps .step .number{
     width: 90px;
@@ -241,12 +265,14 @@ STEPS
 CONVERSION
 ***/
 #conversion{
-    background-color: #272c80;
-
     padding: 80px 0;
 }
 #conversion p,#conversion h2,#conversion label,#conversion strong,#conversion .error-checkbox,#conversion .error-email,#conversion .errorContact{
     color:white;
+}
+#conversion .errorContact{
+    padding: 10px;
+    border: 1px solid white;
 }
 #formResponse{
     text-align: center;
@@ -553,8 +579,8 @@ MODULE ACCESSIBILITE
     }
 }
 @media screen and (max-width: 768px) {
-    #about-us .container-picto img {
-        width: 200px;
+    #about-us .container-picto {
+        display: none;
     }
     #test-quota #calculQuota {
         margin: 50px auto 0 auto;
@@ -563,8 +589,16 @@ MODULE ACCESSIBILITE
         display: none;
     }
     #steps .step {
-        height: 430px;
-        margin-bottom: 15px;
+        margin-bottom: 55px!important;
+        border: none;
+        height: auto;
+    }
+    #steps .step .ornement {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: translate(0,0);
+        margin-top: 0;
     }
     #reseaux #share-buttons a {
         margin: 0 30px;
@@ -593,9 +627,6 @@ MODULE ACCESSIBILITE
     #about-us .container-picto img {
         display: none;
     }
-    #steps .step {
-        height: 450px;
-    }
     #reseaux #share-buttons a {
         margin: 0px 15px;
     }
@@ -612,7 +643,11 @@ MODULE ACCESSIBILITE
         bottom: 40px;
     }
     #steps .step .ornement {
-        width: 120px;
+        display: none;
+    }
+    #test-quota {
+        border: none;
+        border-radius: 0;
     }
 }
 @media screen and (max-width: 352px){
