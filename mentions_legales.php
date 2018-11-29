@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="robots" content="noindex ,nofollow"> <!-- référencement-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-        <title>Mentions légales Handi-cape</title>
+        <title>Mentions légales Handicape</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -62,7 +62,7 @@
                 </p>
             </article>
             <article>
-                <h2>Droits de propriété intelectuelle</h2>
+                <h2>Droits de propriété intélectuelle</h2>
                 <p>L'ensemble de ce site relève des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents iconographiques et photographiques.
                 </p>
             </article>
