@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="container-picto">
-                                <img src="assets/img/picto-responsive.svg" alt="Pictogramme">
+                                <img src="assets/img/device-jaune.svg" alt="Pictogramme">
                             </div>
                         </div>
                     </div>

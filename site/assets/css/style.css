@@ -1,0 +1,47 @@
+/***
+* GENERAL
+***/
+
+
+
+/***
+* HEADER
+***/
+header{
+    background: lightgrey;
+    padding: 0 10px;
+    min-height: 44px;
+    margin-bottom: 20px;
+}
+header .logo{
+    max-width: 300px;
+    max-height: 44px;
+}
+header nav{
+    display: inline-block;
+    float: right;
+}
+header nav a{
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+header nav a:hover{
+    text-decoration: none;
+    background-color: grey;
+}
+
+/***
+* HOME
+***/
+.search{
+    padding: 50px 0;
+    background: rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.top-profils{
+    padding: 50px 0;
+    background: rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
