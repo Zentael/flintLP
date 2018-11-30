@@ -36,7 +36,6 @@
                 <p>Tel : + 33 (0)6.38.25.49</p>
                 <p>handicape-job.fr</p>
                 <br>
-                <p>Handicape est une société anonyme au capital de XXXX€</p>
             </article>
             <article>
                 <h2>Conditions d'utilisations</h2>
