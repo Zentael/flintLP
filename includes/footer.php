@@ -5,9 +5,9 @@
             <!-- Facebook -->
             <!--<a href="" target="_blank" title="Voir notre Facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>-->
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/company/handicapefr" target="_blank" title="Voir notre Linkedin"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+            <a href="https://www.linkedin.com/company/handicapefr" target="_blank" title="Voir notre Linkedin" rel="noopener"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
             <!-- Twitter -->
-            <a href="https://twitter.com/Handicapefr" target="_blank" title="Voir notre Twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+            <a href="https://twitter.com/Handicapefr" target="_blank" title="Voir notre Twitter" rel="noopener"><i class="fab fa-twitter"></i><span>Twitter</span></a>
         </div>
     </div>
     <div>

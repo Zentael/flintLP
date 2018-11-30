@@ -62,7 +62,7 @@
                 </p>
             </article>
             <article>
-                <h2>Droits de propriété intélectuelle</h2>
+                <h2>Droits de propriété intellectuelle</h2>
                 <p>L'ensemble de ce site relève des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents iconographiques et photographiques.
                 </p>
             </article>
