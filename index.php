@@ -6,7 +6,7 @@
         <meta name="author" content="Handicape">
         <meta name="description" content="Handicape, la plateforme innovante pour recruter votre prochain collaborateur souffrant d'un handicape. Aucune chance de vous tromper dans votre choix.">  <!-- 140 char -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Handi-cape</title>
+        <title>Handicape - Recrutez des handicapés en deux clics</title>
 
         <meta name="twitter:card" content="summary" >
         <meta name="twitter:site" content="" > <!--url de notre site-->
@@ -45,7 +45,7 @@
                     <div class="row">
                         <div class="col-12"><h1>La plateforme dont vous rêviez</h1></div>
                         <div class="col-12 col-md-6">
-                            <p>Handi-cape est <strong>une plateforme de mise en relation</strong> entre les recruteurs et les personnes souffrant<br> d’un handicap moteur ou psychique. <strong>Elle est pensée pour vous et vos besoins.</strong><br>
+                            <p>Handicape est <strong>une plateforme de mise en relation</strong> entre les recruteurs et les personnes handicapées.<br><strong>Elle est pensée pour vous et vos besoins.</strong><br>
                                 <strong>Ne perdez plus de temps</strong> en sourcing intensif pour trouver <strong>la perle rare des candidats</strong>, car ils sont tous </br>sur <strong>Handicape.fr</strong>.
                             </p>
                         </div>
@@ -100,7 +100,7 @@
                                 <div class="col-12 col-xs-6 col-md-12">
                                     <img class="number" src="assets/img/one.svg" alt="Première étape">
                                     <p class="title">Inscrivez-vous</p>
-                                    <p>S’inscrire sur notre plateforme vous permetra de voir tous nos profils spécialement sélectionnés pour vous</p>
+                                    <p>S’inscrire sur notre plateforme vous permettra de voir tous nos profils spécialement sélectionnés pour vous</p>
                                 </div>
                                 <div class="col-12 col-xs-6 col-md-12">
                                     <img class="ornement" src="assets/img/contract%20tricolor-v2.svg" alt="Inscription rapide">
@@ -112,7 +112,7 @@
                                 <div class="col-12 col-xs-6 col-md-12">
                                     <img class="number" src="assets/img/two.svg" alt="Deuxième étape">
                                     <p class="title">Trouvez le meilleur profil</p>
-                                    <p>Grâce a notre sélection  ne perdez pas de temps pour trouver le profil qui vous correspond !Handicape se charge du reste</p>
+                                    <p>Grâce a notre sélection  ne perdez pas de temps pour trouver le profil qui vous correspond! Handicape se charge du reste</p>
                                 </div>
                                 <div class="col-12 col-xs-6 col-md-12">
                                     <img class="ornement" src="assets/img/people-tricolor-v2.svg" alt="Les meilleurs candidats">
