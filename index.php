@@ -18,7 +18,7 @@
         <meta property="og:type" content="website" >
         <meta property="og:url" content="" > <!--Notre url-->
         <meta property="og:image" content="" > <!--Image carré du logo-->
-        <meta property="og:description" content="Description du site" >
+        <meta property="og:description" content="Handicape, la plateforme innovante pour recruter votre prochain collaborateur souffrant d'un handicape. Aucune chance de vous tromper dans votre choix." >
         <meta property="og:site_name" content="Handicape" >
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="container-picto">
-                                <img src="assets/img/device-jaune.svg" alt="Pictogramme">
+                                <img src="assets/img/device-jaune-fine.svg" alt="Pictogramme">
                             </div>
                         </div>
                     </div>
@@ -62,15 +62,15 @@
                 </div>
             </section>
 
-            <section id="video" class="container">
+            <!--<section id="video" class="container">
                 <h2>Quelques chiffres</h2>
                 <div class="container-iframe">
                     <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo de présentation de Handicape"></iframe>
                 </div>
-            </section>
+            </section>-->
 
-            <section>
-                <div id="test-quota" class="container section-bleu">
+            <section class="section-gris">
+                <div id="test-quota" class="container">
                     <h2>Est-ce que mon entreprise respecte les quotas ?</h2>
                     <div class="row">
                         <article class="col-sm-6">
@@ -91,49 +91,52 @@
                 </div>
             </section>
 
-            <section id="steps" class="container">
-                <h2>En 3 étapes seulement</h2>
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="step row">
-                            <div class="col-12 col-xs-6 col-md-12">
-                                <img class="number" src="assets/img/one.svg" alt="Première étape">
-                                <p class="title">Inscrivez-vous</p>
-                                <p>S’inscrire sur notre plateforme vous permetra de voir tous nos profils spécialement sélectionnés pour vous</p>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-12">
-                                <img class="ornement" src="assets/img/contract%20tricolor-v2.svg" alt="Inscription rapide">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="step row">
-                            <div class="col-12 col-xs-6 col-md-12">
-                                <img class="number" src="assets/img/two.svg" alt="Deuxième étape">
-                                <p class="title">Trouvez le meilleur profil</p>
-                                <p>Grâce a notre sélection  ne perdez pas de temps pour trouver le profil qui vous correspond !Handicape se charge du reste</p>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-12">
-                                <img class="ornement" src="assets/img/people-tricolor-v2.svg" alt="Les meilleurs candidats">
+            <section class="section-bleu">
+                <div id="steps" class="container">
+                    <h2>En 3 étapes seulement</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="step row">
+                                <div class="col-12 col-xs-6 col-md-12">
+                                    <img class="number" src="assets/img/one.svg" alt="Première étape">
+                                    <p class="title">Inscrivez-vous</p>
+                                    <p>S’inscrire sur notre plateforme vous permetra de voir tous nos profils spécialement sélectionnés pour vous</p>
+                                </div>
+                                <div class="col-12 col-xs-6 col-md-12">
+                                    <img class="ornement" src="assets/img/contract%20tricolor-v2.svg" alt="Inscription rapide">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="step row">
-                            <div class="col-12 col-xs-6 col-md-12">
-                                <img class="number" src="assets/img/three.svg" alt="Dernière étape">
-                                <p class="title">Boostez votre entreprise</p>
-                                <p>Fini les pertes de temps, votre planning s’allège grâce à Handicape !</p>
+                        <div class="col-12 col-md-4">
+                            <div class="step row">
+                                <div class="col-12 col-xs-6 col-md-12">
+                                    <img class="number" src="assets/img/two.svg" alt="Deuxième étape">
+                                    <p class="title">Trouvez le meilleur profil</p>
+                                    <p>Grâce a notre sélection  ne perdez pas de temps pour trouver le profil qui vous correspond !Handicape se charge du reste</p>
+                                </div>
+                                <div class="col-12 col-xs-6 col-md-12">
+                                    <img class="ornement" src="assets/img/people-tricolor-v2.svg" alt="Les meilleurs candidats">
+                                </div>
                             </div>
-                            <div class="col-12 col-xs-6 col-md-12">
-                                <img class="ornement" src="assets/img/increased-tricolor-v2.svg" alt="Boostez votre entreprise">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="step row">
+                                <div class="col-12 col-xs-6 col-md-12">
+                                    <img class="number" src="assets/img/three.svg" alt="Dernière étape">
+                                    <p class="title">Boostez votre entreprise</p>
+                                    <p>Fini les pertes de temps, votre planning s’allège grâce à Handicape !</p>
+                                </div>
+                                <div class="col-12 col-xs-6 col-md-12">
+                                    <img class="ornement" src="assets/img/increased-tricolor-v2.svg" alt="Boostez votre entreprise">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="conversion" class="section-bleu">
+
+            <section id="conversion" class="section-gris">
                 <div class="container">
                     <h2>Ne ratez pas la sortie de Handicape.fr</h2>
                     <p>Inscrivez-vous pour être informé de la sortie du site.</p>
@@ -145,25 +148,13 @@
                          </span>
                         <span class="error-email"></span>
                         <input type="checkbox" id="check-box" hidden>
-                        <label tabindex="0" class="label-checkbox" for="check-box">Dans le cadre de la loi RGPD, nous vous informons que votre adresse mail sera utilisée dans le seul but de vous informer de la sortie du site : <strong>handicape.fr</strong><br>
-                            Votre adresse mail sera supprimée automatiquement de notre base de données par la suite.</label>
+                        <label tabindex="0" class="label-checkbox" for="check-box">Dans le cadre de la loi RGPD, nous vous informons que votre adresse mail sera utilisée dans le seul but de vous informer de la sortie du site : <strong>handicape.fr</strong>. Votre adresse mail sera supprimée automatiquement de notre base de données par la suite.</label>
                         <span class="error-checkbox"></span>
                         <input type="submit" id="validateContactForm" class="custom-btn-yellow" tabindex="0" value="Je souhaite être informé">
                     </form>
                 </div>
             </section>
 
-            <section id="reseaux" class="container">
-                <h2>Suivez nos réseaux !</h2>
-                <div id="share-buttons">
-                    <!-- Facebook -->
-                    <a href="" target="_blank" title="Voir notre Facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/company/handicapefr" target="_blank" title="Voir notre Linkedin"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/Handicapefr" target="_blank" title="Voir notre Twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-                </div>
-            </section>
         </main>
 
         <?php include 'includes/footer.php'; ?>
