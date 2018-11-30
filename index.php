@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#video" class="cts">
+                    <a href="#test-quota" class="cts">
                         <span>En savoir plus</span>
                        <img src="assets/img/arrow-down-white.svg" alt="Descendre pour voir le suite">
                     </a>
