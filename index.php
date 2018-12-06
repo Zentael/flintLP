@@ -23,16 +23,13 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
         <link rel="shortcut icon" href="assets/img/logo.ico">
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130181969-1"></script>
@@ -71,13 +68,6 @@
                     </a>
                 </div>
             </section>
-
-            <!--<section id="video" class="container">
-                <h2>Quelques chiffres</h2>
-                <div class="container-iframe">
-                    <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/X8f5RgwY8CI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Vidéo de présentation de Handicape"></iframe>
-                </div>
-            </section>-->
 
             <section class="section-gris">
                 <div id="test-quota" class="container">
@@ -145,7 +135,6 @@
                 </div>
             </section>
 
-
             <section id="conversion" class="section-gris">
                 <div class="container">
                     <h2>Ne ratez pas la sortie de Handicape.fr</h2>
@@ -164,7 +153,6 @@
                     </form>
                 </div>
             </section>
-
         </main>
 
         <?php include 'includes/footer.php'; ?>
