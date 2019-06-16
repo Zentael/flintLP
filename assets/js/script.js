@@ -1,141 +1,62 @@
+const slider = tns({
+    container: '.userSlider',
+    loop: true,
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    controlsContainer: "#customize-controls",
+    nav:true,
+    navPosition: 'bottom',
+    arrowKeys:true,
 
-/* TEST DU QUOTA DE TRAVAILLEURS HANDICAPES */
-const btnQuota = document.getElementById('calculQuota');
-const inputEmployes = document.getElementById('effectif');
-const inputEmployesHandi = document.getElementById('handicap');
-const digitsOnly = /\D+/g;
-
-inputEmployes.oninput = function(){
-    inputEmployes.value = inputEmployes.value.replace(digitsOnly, "");
-}
-
-inputEmployesHandi.oninput = function(){
-    inputEmployesHandi.value = inputEmployesHandi.value.replace(digitsOnly, "");
-}
-
-btnQuota.onclick = function (){
-    const nbEmployes = inputEmployes.value;
-    const nbEmployesHandi = inputEmployesHandi.value;
-    const result = document.getElementById('resultQuota');
-
-    if (Number(nbEmployes) < Number(nbEmployesHandi)){
-        document.getElementById('icon-incoherent').style.display = "block";
-        document.getElementById('icon-valid').style.display = "none";
-        document.getElementById('icon-wrong').style.display = "none";
-        return result.innerText = "Le calcul est incohérent, vérifiez et réessayez !";
-    }
-    var nbQuota = nbEmployes/(50/3) - nbEmployesHandi;
-    nbQuota = Math.ceil(nbQuota);
-    if (nbQuota > 0){
-        document.getElementById('icon-incoherent').style.display = "none";
-        document.getElementById('icon-valid').style.display = "none";
-        document.getElementById('icon-wrong').style.display = "block";
-        result.innerText = "Votre entreprise ne rempli pas les quotas, Handicape.fr est fait pour vous ! N'oubliez pas de vous inscrire pour être informé de la mise en ligne de la plateforme.";
-    }
-    else {
-        document.getElementById('icon-incoherent').style.display = "none";
-        document.getElementById('icon-valid').style.display = "block";
-        document.getElementById('icon-wrong').style.display = "none";
-        result.innerText = "Félicitations, le nombre de travailleurs handicapés dans votre entreprise est supérieur aux quotas légaux ! Handicape.fr sera votre meilleur ami pour vos futurs recrutements.";
-    }
-    if((nbEmployes == '')||(nbEmployes == 0)){
-        document.getElementById('icon-incoherent').style.display = "block";
-        document.getElementById('icon-valid').style.display = "none";
-        document.getElementById('icon-wrong').style.display = "none";
-        return result.innerText = "Le calcul est incohérent, vérifiez et réessayez !";
-    }
-}
-
-/* AJAX VALIDATION DU FORMULAIRE DE CONTACT */
-$('#validateContactForm').click(function (e) {
-    e.preventDefault();
-    /* Initialiser l'objet xhttp */
-    var xhttp = new XMLHttpRequest();
-    /* Récupérer les valeurs des champs */
-    //Test email
-    var mail = document.getElementById("email").value;
-    if(mail != ''){
-        // testing if it's a valid email adress
-        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if(regex.test(String(mail).toLowerCase())) {
-            $( '.error-email' ).text( '' );
-            $( '#email-error-icon' ).removeClass('show-after');
-        }
-        else {
-            //$('#email-error-icon').effect( 'shake' )
-            $( '.error-email' ).text( 'Le format de l\'email est invalide' );
-            $( '#email-error-icon' ).addClass('show-after');
-        }
-    }
-    else{
-        //$('#email-error-icon').effect( 'shake' );
-        $( '.error-email' ).text( 'L\'email est obligatoire' );
-        $( '#email-error-icon' ).addClass('show-after');
-    }
-    //Test Checkbox
-    var checkbox = document.getElementById("check-box");
-    var isChecked = 0;
-    if (checkbox.checked == true){
-        isChecked = 1;
-        $( '.error-checkbox' ).text( '' );
-    }
-    else{
-        //$( '.label-checkbox' ).effect( 'shake' );
-        $( '.error-checkbox' ).text( 'La checkbox est obligatoire' );
-    }
-    //vérifier si XMLHttpRequest() est interprété par tous les navigateurs cf; activeXObject()...
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            /* Afficher le contenu du traitement php dans une div */
-            document.getElementById("formResponse").innerHTML = this.responseText;
-        }
-    };
-    /* Paramétrer le fichier de traitement php et lui passer des variables*/
-    xhttp.open("GET", "includes/inc-traitement-contact.php?mail="+mail+'&checkbox='+isChecked, true);
-    xhttp.send();
 });
 
-/* SMOOTH SCROLL TO ANCHOR */
-/* Si on clique sur un lien vers un élément de la même page, faire une animation */
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+const usageExplainer = [
+    [
+        document.getElementById("usagePin"),
+        document.getElementById("pinDesc"),
+    ],
+    [
+        document.getElementById("usageTrail"),
+        document.getElementById("trailDesc")
+    ],
+    [
+        document.getElementById("usageQuizz"),
+        document.getElementById("quizzDesc"),
+
+    ],
+    [
+        document.getElementById("usageBeacon"),
+        document.getElementById("beaconDesc")
+    ],
+];
+
+usageExplainer.map(toShow => {
+    toShow[0].onclick = () => {
+        toShow[1].classList.add('shown');
+
+       const usageToHide = usageExplainer.filter(usages => {return usages !== toShow});
+       usageToHide.map(toHide => {
+           toHide[1].classList.remove('shown');
+       });
+   }
 });
+
+
 
 /* Taille du container Iframe */
-jQuery(document).ready(function() {
-    var containerIframeWidth = $('.container-iframe').width();
-    var containerIframeHeight = containerIframeWidth/1.77;
-    $('iframe').css("width", containerIframeWidth+"px");
-    $('iframe').css("height", containerIframeHeight+"px");
-});
-/* Quand la page change de taille */
-$( window ).resize(function() {
-    /* Taille du container Iframe */
-    var containerIframeWidth = $('.container-iframe').width();
-    var containerIframeHeight = containerIframeWidth/1.77;
-    $('iframe').css("width", containerIframeWidth+"px");
-    $('iframe').css("height", containerIframeHeight+"px");
-});
+const resizeHeight = () => {
+    const iframe = document.getElementById("container-iframe");
+    const containerIframeWidth = iframe.offsetWidth;
+    const containerIframeHeight = containerIframeWidth/1.77;
+    iframe.style.width = containerIframeWidth+"px";
+    iframe.style.height =  containerIframeHeight+"px";
+};
 
-/* Custom checkbox */
-$('#check-box').change(function () {
-    if($(this).is(":checked")){
-        $('.label-checkbox').addClass('selected-checkbox');
-    }
-    else{
-        $('.label-checkbox').removeClass('selected-checkbox');
-    }
-});
-/* Checkbox clickable avec la barre espace avec pseudo element */
-$(document).keypress(function(e) {
-    var element = $(document.activeElement).attr('class');
-    if(element){
-        if(element.includes('label-checkbox')){
-            e.preventDefault();
-            $('#check-box').click();
-        }
-    }
-});
+/* Quand la page change de taille */
+window.onresize = function(event){
+    resizeHeight();
+};
