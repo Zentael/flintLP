@@ -56,6 +56,8 @@ const resizeHeight = () => {
     iframe.style.height =  containerIframeHeight+"px";
 };
 
+resizeHeight();
+
 /* Quand la page change de taille */
 window.onresize = function(event){
     resizeHeight();

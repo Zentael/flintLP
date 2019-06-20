@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="robots" content="index,follow"> <!-- référencement-->
-        <meta name="author" content="Flint">
-        <meta name="description" content="Flint, la plateforme innovante pour recruter votre prochain collaborateur souffrant d'un Flint. Aucune chance de vous tromper dans votre choix.">  <!-- 140 char -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Flint</title>
+<head>
 
-        <meta name="twitter:card" content="summary" >
-        <meta name="twitter:site" content="" > <!--url de notre site-->
-        <meta name="twitter:title" content="Flint" >
-        <meta name="twitter:description" content="Description du site" >
-        <meta name="twitter:creator" content="@Flint" >
-        <meta name="twitter:image:src" content="" > <!--Image carré du logo-->
-        <meta property="og:title" content="Flint" >
-        <meta property="og:type" content="website" >
-        <meta property="og:url" content="" > <!--Notre url-->
-        <meta property="og:image" content="" > <!--Image carré du logo-->
-        <meta property="og:description" content="La nouvelle façon d'organiser vos sorties" >
-        <meta property="og:site_name" content="Flint" >
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NXZ5FLR');</script>
+    <!-- End Google Tag Manager -->
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow"> <!-- référencement-->
+    <meta name="author" content="Flint">
+    <meta name="description" content="Flint, un service novateur pour tout les amoureux du grand air. Fiez-vous à vos sens, laissez la nature résonner en vous.">  <!-- 140 char -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#EDB42C"/>
+    <title>Flint</title>
 
-         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link rel="shortcut icon" href="assets/img/logo.ico">
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <meta name="twitter:card" content="summary" >
+    <meta name="twitter:site" content="" > <!--url de notre site-->
+    <meta name="twitter:title" content="Flint" >
+    <meta name="twitter:description" content="Description du site" >
+    <meta name="twitter:creator" content="@Flint" >
+    <meta name="twitter:image:src" content="" > <!--Image carré du logo-->
+    <meta property="og:title" content="Flint" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="" > <!--Notre url-->
+    <meta property="og:image" content="" > <!--Image carré du logo-->
+    <meta property="og:description" content="La nouvelle façon d'organiser vos sorties" >
+    <meta property="og:site_name" content="Flint" >
 
-            gtag('config', 'UA-130181969-1');
-        </script>
-    </head>
-    <?php session_start(); // place it on the top of the script ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142138976-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142138976-1');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#f1d600"
+                    }
+                },
+                "theme": "edgeless",
+                "content": {
+                    "message": "Flint utilise des cookies pour mieux vous connaître et toujours mieux vous aider.",
+                    "dismiss": "Bien sûr",
+                    "link": "Découvrez pourquoi ?"
+                }
+            })});
+    </script>
+
+
+</head>
+<?php session_start(); // place it on the top of the script ?>
     <body>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZ5FLR"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
         <header>
             <div class="logoContainer">
                 <img alt="Logo de Flint" src=""/>
@@ -52,8 +93,8 @@
             <section class="row explainerContainer">
                 <div id="container-iframe">
                     <iframe id="ytplayer"
-                            src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=0"
-                            ></iframe>
+                            src="http://www.youtube.com/embed/7wGnlsvxfWM?autoplay=0&controls=0&showinfo=0&rel=0"
+                    ></iframe>
                 </div>
                 <div>
                     <h3>COMMENT ÇA MARCHE ?</h3>
@@ -84,8 +125,11 @@
                     echo $statusMsg;
                     ?>
                     <form method="post" action="./includes/subscribeNL.php">
+                        <label tabindex="0" class="label-checkbox">
+                            <input type="checkbox" name="consent">
+                            J'accepte les conditions générales d'utilisation de flint quant à l'utilisation de mon adresse mail, conformément au cadre de la loi RGPD.
+                        </label>
                         <label>
-                            <span>Dans le cadre de la loi RGPD, nous vous informons que votre adresse mail sera utilisée dans le seul but de vous informer de la sortie de la plateforme Flint. Votre adresse mail sera supprimée automatique de notre base de données par la suite.</span>
                             <input name="mail" type="email" placeholder="Votre adresse mail">
                         </label>
                         <input name="submit" type="submit" value="Envoyer"/>
@@ -173,12 +217,20 @@
             <section class="ctaForm">
                 <div>
                     <h4>Inscrivez-vous !</h4>
-                    <form>
-                        <label>
-                            <span>Dans le cadre de la loi RGPD, nous vous informons que votre adresse mail sera utilisée dans le seul but de vous informer de la sortie de la plateforme Flint. Votre adresse mail sera supprimée automatique de notre base de données par la suite.</span>
-                            <input type="email" placeholder="Votre adresse mail">
+                    <?php
+                    $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+                    unset($_SESSION['msg']);
+                    echo $statusMsg;
+                    ?>
+                    <form method="post" action="./includes/subscribeNL.php">
+                        <label tabindex="0" class="label-checkbox">
+                            <input type="checkbox" name="consent">
+                            J'accepte les conditions générales d'utilisation de flint quant à l'utilisation de mon adresse mail, conformément au cadre de la loi RGPD.
                         </label>
-                        <input type="submit" value="Envoyer"/>
+                        <label>
+                            <input name="mail" type="email" placeholder="Votre adresse mail">
+                        </label>
+                        <input name="submit" type="submit" value="Envoyer"/>
                     </form>
                 </div>
             </section>
@@ -188,17 +240,22 @@
                 <h5>Suivez nos réseaux !</h5>
                 <div id="share-buttons">
                     <!-- Facebook -->
-                    <a href="" target="_blank" title="Voir notre Facebook">
+                    <a href="https://www.facebook.com/Flintngo-2324161121192251/" target="_blank" title="Voir notre Facebook">
                         <i class="fab fa-facebook-f"></i>
                         <span>Facebook</span>
                     </a>
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/company/Flint" target="_blank" title="Voir notre Linkedin" rel="noopener">
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/Flintngo" target="_blank" title="Voir notre Twitter" rel="noopener">
                         <i class="fab fa-twitter"></i>
                         <span>Twitter</span>
                     </a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/Flint" target="_blank" title="Voir notre Twitter" rel="noopener">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/company/flintngo" target="_blank" title="Voir notre LinkedIn" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <!-- Insta -->
+                    <a href="https://www.instagram.com/flintngo/" target="_blank" title="Voir notre Instagram" rel="noopener">
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
