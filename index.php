@@ -2,6 +2,13 @@
 <html lang="fr">
 <head>
 
+    <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+            analytics.load("1L4DqShthlzQygEWwoEmE4youyRJxZfB");
+            analytics.page();
+        }}();
+    </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -94,6 +101,7 @@
                 <div id="container-iframe">
                     <iframe id="ytplayer"
                             src="http://www.youtube.com/embed/7wGnlsvxfWM?autoplay=0&controls=0&showinfo=0&rel=0"
+                            title="explainer video"
                     ></iframe>
                 </div>
                 <div>
@@ -184,28 +192,28 @@
                 </ul>
                 <div class="userSlider">
                     <div>
-                        <div class="usagesImages" id="usagesRandonee"></div>
+                        <div class="usagesImages randonee"></div>
                         <article>
                             <h4>POUR LA RANDONEE</h4>
                             <p>Utilisez notre app en randonée pour faire des trucs !</p>
                         </article>
                     </div>
                     <div>
-                        <div class="usagesImages" id="usagesEscalade"></div>
+                        <div class="usagesImages escalade"></div>
                         <article>
                             <h4>Pour l'escalade</h4>
                             <p>Utilisez notre app en escalade pour faire des trucs !</p>
                         </article>
                     </div>
                     <div>
-                        <div class="usagesImages" id="usagesCueilette"></div>
+                        <div class="usagesImages cueillette"></div>
                         <article>
                             <h4>Pour la cueillette</h4>
                             <p>Utilisez notre app en cueillette pour faire des trucs !</p>
                         </article>
                     </div>
                     <div>
-                        <div class="usagesImages" id="usagesPeche"></div>
+                        <div class="usagesImages peche"></div>
                         <article>
                             <h4>Pour la pêche</h4>
                             <p>Utilisez notre app en pêche pour faire des trucs !</p>
@@ -240,12 +248,12 @@
                 <h5>Suivez nos réseaux !</h5>
                 <div id="share-buttons">
                     <!-- Facebook -->
-                    <a href="https://www.facebook.com/Flintngo-2324161121192251/" target="_blank" title="Voir notre Facebook">
+                    <a href="http://bit.ly/2Kuv36M" target="_blank" title="Voir notre Facebook">
                         <i class="fab fa-facebook-f"></i>
                         <span>Facebook</span>
                     </a>
                     <!-- Twitter -->
-                    <a href="https://twitter.com/Flintngo" target="_blank" title="Voir notre Twitter" rel="noopener">
+                    <a href="http://bit.ly/2x4kZc2" target="_blank" title="Voir notre Twitter" rel="noopener">
                         <i class="fab fa-twitter"></i>
                         <span>Twitter</span>
                     </a>
@@ -255,7 +263,7 @@
                         <span>LinkedIn</span>
                     </a>
                     <!-- Insta -->
-                    <a href="https://www.instagram.com/flintngo/" target="_blank" title="Voir notre Instagram" rel="noopener">
+                    <a href="http://bit.ly/2WXozyY" target="_blank" title="Voir notre Instagram" rel="noopener">
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
