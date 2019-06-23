@@ -45,8 +45,6 @@ usageExplainer.map(toShow => {
    }
 });
 
-
-
 /* Taille du container Iframe */
 const resizeHeight = () => {
     const iframe = document.getElementById("container-iframe");

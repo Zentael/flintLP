@@ -9,14 +9,6 @@
         }}();
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NXZ5FLR');</script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8">
     <meta name="robots" content="index,follow"> <!-- référencement-->
     <meta name="author" content="Flint">
@@ -42,19 +34,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/logo.ico">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142138976-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-142138976-1');
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script>
@@ -81,12 +63,6 @@
 </head>
 <?php session_start(); // place it on the top of the script ?>
     <body>
-
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZ5FLR"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-
         <header>
             <div class="logoContainer">
                 <img alt="Logo de Flint" src=""/>
@@ -100,8 +76,7 @@
             <section class="row explainerContainer">
                 <div id="container-iframe">
                     <iframe id="ytplayer"
-                            src="http://www.youtube.com/embed/7wGnlsvxfWM?autoplay=0&controls=0&showinfo=0&rel=0"
-                            title="explainer video"
+                            src="https://www.youtube.com/embed/7wGnlsvxfWM?autoplay=0&controls=0&showinfo=0&rel=0"
                     ></iframe>
                 </div>
                 <div>
@@ -123,26 +98,6 @@
                     <h2>Profitez</h2>
                     <p>D'une expérience unique dans vos activités à l'extérieur</p>
                 </article>
-            </section>
-            <section class="ctaForm">
-                <div>
-                    <h4>Inscrivez-vous !</h4>
-                    <?php
-                    $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
-                    unset($_SESSION['msg']);
-                    echo $statusMsg;
-                    ?>
-                    <form method="post" action="./includes/subscribeNL.php">
-                        <label tabindex="0" class="label-checkbox">
-                            <input type="checkbox" name="consent">
-                            J'accepte les conditions générales d'utilisation de flint quant à l'utilisation de mon adresse mail, conformément au cadre de la loi RGPD.
-                        </label>
-                        <label>
-                            <input name="mail" type="email" placeholder="Votre adresse mail">
-                        </label>
-                        <input name="submit" type="submit" value="Envoyer"/>
-                    </form>
-                </div>
             </section>
             <section class="usagesContainer">
                 <h2>Les différents usages</h2>
@@ -222,26 +177,7 @@
                 </div>
 
             </section>
-            <section class="ctaForm">
-                <div>
-                    <h4>Inscrivez-vous !</h4>
-                    <?php
-                    $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
-                    unset($_SESSION['msg']);
-                    echo $statusMsg;
-                    ?>
-                    <form method="post" action="./includes/subscribeNL.php">
-                        <label tabindex="0" class="label-checkbox">
-                            <input type="checkbox" name="consent">
-                            J'accepte les conditions générales d'utilisation de flint quant à l'utilisation de mon adresse mail, conformément au cadre de la loi RGPD.
-                        </label>
-                        <label>
-                            <input name="mail" type="email" placeholder="Votre adresse mail">
-                        </label>
-                        <input name="submit" type="submit" value="Envoyer"/>
-                    </form>
-                </div>
-            </section>
+
         </main>
         <footer>
             <div id="reseaux">
@@ -258,7 +194,7 @@
                         <span>Twitter</span>
                     </a>
                     <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/company/flintngo" target="_blank" title="Voir notre LinkedIn" rel="noopener">
+                    <a href="http://bit.ly/31KLu4d" target="_blank" title="Voir notre LinkedIn" rel="noopener">
                         <i class="fab fa-linkedin"></i>
                         <span>LinkedIn</span>
                     </a>
@@ -273,6 +209,28 @@
                 ©Flint 2019 - <a class="link-blue" href="mentions_legales.php" target="_blank" title="Consulter les mentions légales">Mentions légales</a>
             </div>
         </footer>
+        <aside>
+                <h4>Inscrivez-vous !</h4>
+                <?php
+                $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+                unset($_SESSION['msg']);
+                echo $statusMsg;
+                ?>
+                <form method="post" action="./includes/subscribeNL.php">
+                    <label tabindex="0" class="label-checkbox">
+                        <input type="checkbox" name="consent">
+                        Mon adresse e-mail sera utilisée pour m'informer du lancement de Flint'n'Go.
+                        <br>Elle ne sera pas partagée avec un tiers.
+                    </label>
+                    <div>
+                        <label>
+                            <input name="mail" type="email" placeholder="Votre adresse mail">
+                        </label>
+                        <input name="submit" type="submit" value="Envoyer"/>
+                    </div>
+
+                </form>
+        </aside>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
         <script src="assets/js/script.js"></script>
     </body>

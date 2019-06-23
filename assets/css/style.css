@@ -156,40 +156,42 @@ section{
     margin:0 auto;
 }
 
-.ctaForm{
-    background-color: #EFD89F;
-    height:500px;
-}
-
-.ctaForm > div{
-    width:70%;
+aside{
+    position:fixed;
+    right:50px;
+    bottom:50px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius:10px;
-    max-width:400px;
-    padding:50px 20px;
+    max-width:350px;
+    padding:10px;
     background-color: #FBF7EB;
 }
-
-.ctaForm > div h4{
-    font-size: 1.65rem;
-    margin-bottom: 40px;
+aside h4{
+    font-size: 1.35rem;
     font-family: 'Roboto', sans-serif;
+    margin:20px 0;
+    text-align: center;
 }
 
-.ctaForm > div form label, .ctaForm > div p{
+aside form label, aside > div p{
     font-family: 'Avenir', sans-serif;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 0.8rem;
     display:flex;
     flex-direction: row;
+    padding:10px;
+    flex:3;
+}
+
+aside form label span{
     margin-bottom:20px;
 }
 
-.ctaForm > div form label span{
-    margin-bottom:20px;
+aside form div{
+    display:flex;
 }
 
-.ctaForm > div form input[type="email"]{
+aside form input[type="email"]{
     background:none;
     border:none;
     color: #000;
@@ -198,29 +200,29 @@ section{
     width:100%;
 }
 
-.ctaForm > div form input[type="checkbox"]{
+aside form input[type="checkbox"]{
     margin-right:20px;
 }
 
-.ctaForm > div form input[type="email"]:focus{
+aside form input[type="email"]:focus{
     margin-bottom:0;
     border-color: #EDB42C;
 }
 
-.ctaForm > div form input[type="submit"]{
+aside form input[type="submit"]{
 text-align: center;
 background-color: #EDB42C;
 color: #fff;
 border:none;
 border-radius: 5px;
 padding:10px;
+    margin:10px;
 box-sizing: border-box;
-width:90px;
-    transition:0.5s;
-margin: 20px 0 0 calc(50% - 40px);
+flex:1;
+transition:0.5s;
 }
 
-.ctaForm > div form input[type="submit"]:hover{
+aside form input[type="submit"]:hover{
     background-color:#E09E00;
 }
 
@@ -352,13 +354,13 @@ margin: 20px 0 0 calc(50% - 40px);
 .usagesImages{
     width:100%;
     margin-bottom:40px;
-    height:auto;
+    height:438px;
     background-blend-mode: multiply;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 
 .usagesImages.randonee{
@@ -366,15 +368,15 @@ margin: 20px 0 0 calc(50% - 40px);
 }
 
 .usagesImages.escalade{
-
+    background-image: url('../img/usagesRandonee.jpg');
 }
 
 .usagesImages.cueillette{
-
+    background-image: url('../img/usagesRandonee.jpg');
 }
 
 .usagesImages.peche{
-
+    background-image: url('../img/usagesRandonee.jpg');
 }
 
 .userSlider{
@@ -438,6 +440,10 @@ margin: 20px 0 0 calc(50% - 40px);
     margin: 0 20px;
 }
 
+.tns-nav button:focus{
+    border-color: #0e76a8;
+}
+
 footer{
     width:100%;
     background-color: #1a1a1a;
@@ -472,19 +478,23 @@ footer #reseaux #share-buttons a:visited{
     color: #fff;
 }
 
-footer #reseaux #share-buttons a:first-of-type:hover{
-    color: #3b5998
+footer #reseaux #share-buttons a:focus{
+    border:none;
 }
 
-footer #reseaux #share-buttons a:nth-of-type(2):hover{
+footer #reseaux #share-buttons a:first-of-type:hover, footer #reseaux #share-buttons a:first-of-type:focus{
+    color: #3b5998;
+}
+
+footer #reseaux #share-buttons a:nth-of-type(2):hover, footer #reseaux #share-buttons a:nth-of-type(2):focus{
     color: #1da1f2
 }
 
-footer #reseaux #share-buttons a:nth-of-type(3):hover{
+footer #reseaux #share-buttons a:nth-of-type(3):hover, footer #reseaux #share-buttons a:nth-of-type(3):focus{
     color: #0e76a8
 }
 
-footer #reseaux #share-buttons a:last-of-type:hover{
+footer #reseaux #share-buttons a:last-of-type:hover, footer #reseaux #share-buttons a:last-of-type:focus{
     color: #fb3958
 }
 
