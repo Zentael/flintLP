@@ -1,62 +1,98 @@
-const slider = tns({
-    container: '.userSlider',
-    loop: true,
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    autoplayButtonOutput: false,
-    mouseDrag: true,
-    lazyload: true,
-    controlsContainer: "#customize-controls",
-    nav:true,
-    navPosition: 'bottom',
-    arrowKeys:true,
+//Obscurcir les section non centrées ----------------------------
 
+const firstPart = document.getElementById("firstPart");
+const secondPart = document.getElementById("secondPart");
+const thirdPart = document.getElementById("thirdPart");
+
+window.addEventListener('scroll', function() {
+    if(1100 < window.scrollY && window.scrollY < 1500){
+        firstPart.style.filter = "initial";
+        secondPart.style.filter = "brightness(50%)";
+        thirdPart.style.filter = "brightness(50%)";
+    } else
+    if(1500 < window.scrollY && window.scrollY < 1900){
+        firstPart.style.filter = "brightness(50%)";
+        secondPart.style.filter = "initial";
+        thirdPart.style.filter = "brightness(50%)";
+    } else
+    if(1900 < window.scrollY && window.scrollY < 2300){
+        firstPart.style.filter = "brightness(50%)";
+        secondPart.style.filter = "brightness(50%)";
+        thirdPart.style.filter = "initial";
+    }
 });
 
-const usageExplainer = [
-    [
-        document.getElementById("usagePin"),
-        document.getElementById("pinDesc"),
-    ],
-    [
-        document.getElementById("usageTrail"),
-        document.getElementById("trailDesc")
-    ],
-    [
-        document.getElementById("usageQuizz"),
-        document.getElementById("quizzDesc"),
+//Smooth scroll ------------------------------------------------
 
-    ],
-    [
-        document.getElementById("usageBeacon"),
-        document.getElementById("beaconDesc")
-    ],
-];
+let targetOffset, currentPosition,
+    body = document.body,
+    button = document.getElementById('scrollToCta'),
+    animateTime = 900;
 
-usageExplainer.map(toShow => {
-    toShow[0].onclick = () => {
-        toShow[1].classList.add('shown');
+function getPageScroll() {
+    let yScroll;
 
-       const usageToHide = usageExplainer.filter(usages => {return usages !== toShow});
-       usageToHide.map(toHide => {
-           toHide[1].classList.remove('shown');
-       });
-   }
-});
+    if (window.pageYOffset) {
+        yScroll = window.pageYOffset;
+    } else if (document.documentElement && document.documentElement.scrollTop) {
+        yScroll = document.documentElement.scrollTop;
+    } else if (document.body) {
+        yScroll = document.body.scrollTop;
+    }
+    return yScroll;
+}
 
-/* Taille du container Iframe */
-const resizeHeight = () => {
-    const iframe = document.getElementById("container-iframe");
-    const containerIframeWidth = iframe.offsetWidth;
-    const containerIframeHeight = containerIframeWidth/1.77;
-    iframe.style.width = containerIframeWidth+"px";
-    iframe.style.height =  containerIframeHeight+"px";
-};
+button.addEventListener('click', function (event) {
 
-resizeHeight();
+    targetOffset = document.getElementById(event.target.hash.substr(1)).offsetTop;
+    currentPosition = getPageScroll();
 
-/* Quand la page change de taille */
-window.onresize = function(event){
-    resizeHeight();
+    body.classList.add('in-transition');
+    body.style.WebkitTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+    body.style.MozTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+    body.style.transform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+
+    window.setTimeout(function () {
+        body.classList.remove('in-transition');
+        body.style.cssText = "";
+        window.scrollTo(0, targetOffset);
+    }, animateTime);
+
+    event.preventDefault();
+
+}, false);
+
+// Affichage transitif des boutons de partage réseaux sociaux -------
+
+let isSocialShown = false;
+
+showSocial = function(){
+    console.log("beep");
+    const footer = document.getElementById("footer");
+
+    if(!isSocialShown){
+        isSocialShown = true;
+
+        footer.style.height = "90vh";
+
+        targetOffset = footer.offsetTop - (window.innerHeight * 0.1);
+        console.log(targetOffset);
+        currentPosition = getPageScroll();
+        console.log(currentPosition);
+
+        body.classList.add('in-transition');
+
+        body.style.WebkitTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.MozTransform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+        body.style.transform = "translate(0, -" + (targetOffset - currentPosition) + "px)";
+    } else {
+        isSocialShown = false;
+        footer.style.height = "30vh";
+    }
+
+    window.setTimeout(function () {
+        body.classList.remove('in-transition');
+        body.style.cssText = "";
+        window.scrollTo(0, targetOffset);
+    }, animateTime);
 };
