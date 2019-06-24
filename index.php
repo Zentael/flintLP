@@ -61,6 +61,8 @@
 </head>
 <?php session_start(); // place it on the top of the script ?>
     <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=445197319373471&autoLogAppEvents=1"></script>
         <header>
             <div class="logoContainer">
                 <img alt="Logo de Flint" src=""/>
@@ -98,15 +100,12 @@
                     <p>Partagez vos connaissances et vos endroits favoris avec la communauté du grand air</p>
                 </article>
             </section>
-            <section id="inscritpion">
+            <section id="inscritpion" onclick={closeSocial()}>
                 <h4>Envie d'en savoir plus ?</h4>
                 <p>Abonnez-vous à la newletter et nous vous tiendront informés de la sortie et des nouveautés de Flint'n'go.</p>
-                <?php
-                $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
-                unset($_SESSION['msg']);
-                echo $statusMsg;
-                ?>
-                <form method="post" action="./includes/subscribeNL.php">
+                <p id="errorMessage"></p>
+                <p id="validMessage"></p>
+                <form method="post" action="./includes/subscribeNL.php" id="formmailchimp">
                     <label tabindex="0" class="label-checkbox">
                         <input type="checkbox" name="consent">
                         <span>
@@ -153,18 +152,31 @@
             </section>
         </main>
         <footer id="footer">
-            <div id="reseaux">
-                <h5>Partagez avec vos amis</h5>
-            </div>
-            <button id="share-button" onClick={showSocial()}>
-
+            <h5>Partagez avec vos amis</h5>
+            <button class="socialButton" id="share-button" onClick={triggerSocial()}>
+                <i class="fas fa-share-alt"></i>
             </button>
+            <a id="facebookButton" class="socialButton" target="_blank" rel="noopener"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://flintngo.fr">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a id="twitterButton" class="socialButton" target="_blank" rel="noopener"
+               href="https://twitter.com/intent/tweet?text=https://flintngo.fr">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a id="linkedinButton" class="socialButton" target="_blank" rel="noopener"
+               href="https://www.linkedin.com/shareArticle?mini=true&url=https://flintngo.fr">
+                <i class="fab fa-linkedin"></i>
+            </a>
             <div>
-                <a class="link-blue" href="mentions_legales.php" target="_blank" title="Consulter les mentions légales">Mentions légales</a>
-                <a class="link-blue" href="dossier_presse.php" target="_blank" title="Télécharger le dossier de presse">Dossier presse</a>
+                <div>
+                    <a class="link-blue" href="mentions_legales.php" target="_blank" title="Consulter les mentions légales">Mentions légales</a>
+                    <a class="link-blue" href="dossier_presse.php" target="_blank" title="Télécharger le dossier de presse">Dossier presse</a>
+                </div>
                 <span>©Flint'n'Go 2019 - tout droits réservés</span>
             </div>
         </footer>
        <script src="assets/js/script.js"></script>
+       <script src="assets/js/ajax.js"></script>
     </body>
 </html>

@@ -12,6 +12,7 @@
 body{
     margin:0;
     font-family: 'Avenir', sans-serif;
+    position:relative;
 }
 
 body.in-transition {
@@ -31,7 +32,7 @@ header {
 }
 
 header .logoContainer{
-    margin:150px auto 50px;
+    margin:150px auto 75px;
     width:auto;
     background-color: red;
 }
@@ -43,7 +44,7 @@ header .punchText{
 header p{
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     position:absolute;
     animation-fill-mode: forwards;
     text-align:center;
@@ -51,12 +52,12 @@ header p{
 }
 
 header p:first-of-type {
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slideFromLeft;
 }
 
 header p:last-of-type {
-    animation-duration: 7s;
+    animation-duration: 5s;
     top:120px;
     animation-name: slideFromRightAfter;
 }
@@ -152,7 +153,7 @@ section.intro a{
     background-position: center;
     width: 100%;
     height:33.4vh;
-    filter: brightness(50%);
+    filter: brightness(30%);
     text-align: center;
     display:flex;
     flex-flow: column;
@@ -193,6 +194,7 @@ section.intro a{
 
 #inscritpion{
     height: 70vh;
+    margin-bottom:30vh;
     padding: 0 15%;
     text-align: center;
 }
@@ -246,6 +248,19 @@ section.intro a{
     padding: 10px;
     box-sizing: border-box;
     transition:0.5s;
+}
+
+#errorMessage, #validMessage{
+    position: absolute;
+    top: 43vh;
+}
+
+#errorMessage{
+    color: red;
+}
+
+#validMessage{
+    color: green;
 }
 
 #inscritpion form input[type="submit"]:hover{
@@ -302,6 +317,9 @@ section.intro a{
 }
 
 footer{
+    position:absolute;
+    bottom:-30vh;
+    left:0;
     height:30vh;
     width:100%;
     background-color: #1a1a1a;
@@ -314,29 +332,21 @@ footer{
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
+    animation-fill-mode: forwards;
 }
 
 footer h5{
-    margin: 10px 0 20px;
+    margin: 0;
 }
 
-#share-button{
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #3f3f3f;
-    border:none;
+footer div div{
+    margin-bottom: 10px;
 }
 
-#share-button:hover{
-    cursor: pointer;
-}
-
-footer a, footer span{
+footer div a, footer span{
     color: #fff;
-    margin: 10px 0 0;
+    margin: 0 10px;
     text-decoration: none;
-    display:block;
     font-size: 0.9rem;
 }
 
@@ -347,6 +357,42 @@ footer span{
 
 footer a:visited{
     color: #fff;
+}
+
+footer .socialButton{
+    position:absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 20px);
+    width:40px;
+    height:40px;
+    background-color: #666;
+    border: none;
+    border-radius: 40px;
+    transition: 900ms;
+    display:block;
+    color: #fff;
+}
+
+#share-button{
+    width:50px;
+    height: 50px;
+    top: calc(50% - 55px);
+    left: calc(50% - 25px);
+    background-color: #3f3f3f;
+    z-index:1;
+}
+
+#share-button:focus{
+    outline:none;
+    border: #666 1px solid;
+}
+
+footer .socialButton:hover{
+    cursor: pointer;
+}
+
+footer .socialButton:not(#share-button) i{
+    line-height: 60px;
 }
 
 .mentions_legales h2, .mentions_legales h3, .mentions_legales a{
