@@ -4,21 +4,28 @@ const firstPart = document.getElementById("firstPart");
 const secondPart = document.getElementById("secondPart");
 const thirdPart = document.getElementById("thirdPart");
 
-window.addEventListener('scroll', function() {
-    if(1100 < window.scrollY && window.scrollY < 1500){
-        firstPart.style.filter = "initial";
-        secondPart.style.filter = "brightness(30%)";
-        thirdPart.style.filter = "brightness(30%)";
+const firstScroll = window.innerHeight * 2.09359605911;
+const secondScroll = window.innerHeight * 2.46305418719;
+
+console.log(window.innerHeight);
+console.log(firstScroll);
+console.log(secondScroll);
+
+window.addEventListener('scroll', function () {
+    if(window.pageYOffset < firstScroll){
+        firstPart.classList.add("lit");
+        secondPart.classList.remove("lit");
+        thirdPart.classList.remove("lit");
     } else
-    if(1500 < window.scrollY && window.scrollY < 1900){
-        firstPart.style.filter = "brightness(30%)";
-        secondPart.style.filter = "initial";
-        thirdPart.style.filter = "brightness(30%)";
+    if(firstScroll < window.pageYOffset && window.window.pageYOffset < secondScroll){
+        firstPart.classList.remove("lit");
+        secondPart.classList.add("lit");
+        thirdPart.classList.remove("lit");
     } else
-    if(1900 < window.scrollY && window.scrollY < 2300){
-        firstPart.style.filter = "brightness(30%)";
-        secondPart.style.filter = "brightness(30%)";
-        thirdPart.style.filter = "initial";
+    if(secondScroll < window.pageYOffset){
+        firstPart.classList.remove("lit");
+        secondPart.classList.remove("lit");
+        thirdPart.classList.add("lit");
     }
 });
 
@@ -62,11 +69,17 @@ button.addEventListener('click', function (event) {
 
 }, false);
 
+const footer = document.getElementById("footer");
+
+window.addEventListener('resize', function (event) {
+    footer.style.height = "370vh";
+    footer.style.height = footer.clientHeight + 'px';
+});
+
+
 // Affichage transitif des boutons de partage réseaux sociaux -------
 
 let isSocialShown = false;
-
-const footer = document.getElementById("footer");
 
 const facebook = document.getElementById("facebookButton");
 const twitter = document.getElementById("twitterButton");
@@ -74,28 +87,45 @@ const linkedin = document.getElementById("linkedinButton");
 
 closeSocial = function(){
     isSocialShown = false;
-    footer.style.height = "30vh";
+    footer.style.height = "200px";
+    footer.style.position = "initial";
 
-    facebook.style.top = "calc(50% - 50px)";
+    facebook.style.top = "calc(50% - 30px)";
     facebook.style.left = "calc(50% - 20px)";
     facebook.style.height = "40px";
     facebook.style.width = "40px";
 
-    twitter.style.top = "calc(50% - 50px)";
+    twitter.style.top = "calc(50% - 30px)";
     twitter.style.left = "calc(50% - 20px)";
     twitter.style.height = "40px";
     twitter.style.width = "40px";
 
-
-    linkedin.style.top = "calc(50% - 50px)";
+    linkedin.style.top = "calc(50% - 30px)";
     linkedin.style.left = "calc(50% - 20px)";
     linkedin.style.height = "40px";
     linkedin.style.width = "40px";
+
+    window.scrollTo(0,document.body.scrollHeight);
 };
 
 openSocial = function(){
     isSocialShown = true;
-    footer.style.height = "90vh";
+
+    console.log("document.body.scrollHeight : ", document.body.scrollHeight);
+
+    const scrollHeight = document.body.scrollHeight;
+    const scrollFraction = scrollHeight / 900;
+    function toScroll(){
+        console.log("scrolling");
+        scrollTo(scrollFraction, scrollHeight);
+    }
+    const scrollToBottom = window.setInterval(toScroll, 1);
+    setTimeout(function(){
+        clearInterval(scrollToBottom);
+    }, 900);
+
+    footer.style.height = "100vh";
+    footer.style.position = "absolute";
 
     facebook.style.top = "calc(50% - 145px)";
     facebook.style.left = "calc(50% - 30px)";
@@ -116,7 +146,6 @@ openSocial = function(){
         linkedin.style.width = "60px";
     }, 800);
 
-
 };
 
 outsideClickSocial = function(){
@@ -135,5 +164,4 @@ triggerSocial = function(){
 
 openFacebook = function(){
     console.log("openFb");
-
 };

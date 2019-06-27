@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8">
     <meta name="robots" content="index,follow"> <!-- référencement-->
-    <meta name="author" content="Flint">
+    <meta name="author" content="FlintnGo">
     <meta name="description" content="Flint, un service novateur pour tout les amoureux du grand air. Fiez-vous à vos sens, laissez la nature résonner en vous.">  <!-- 140 char -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#EDB42C"/>
@@ -19,7 +19,7 @@
 
     <meta name="twitter:card" content="summary" >
     <meta name="twitter:site" content="flintngo.fr" > <!--url de notre site-->
-    <meta name="twitter:title" content="Flint'n'Go" >
+    <meta name="twitter:title" content="FlintnGo" >
     <meta name="twitter:description" content="Description du site" >
     <meta name="twitter:creator" content="@Flintngo" >
     <meta name="twitter:image:src" content="assets/img/logo.png" > <!--Image carré du logo-->
@@ -35,7 +35,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet preload">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.ico.png">
 
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script>
@@ -60,121 +60,106 @@
     </script>
 </head>
 <?php session_start(); // place it on the top of the script ?>
-    <body>
+    <body class="rectangleBleu">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=445197319373471&autoLogAppEvents=1"></script>
         <header>
             <div class="logoContainer">
-                <img alt="Logo de Flint" src=""/>
+                <img alt="Logo de Flint" src="./assets/img/logo.png"/>
             </div>
             <div class="punchText">
-                <p>20 000 photos de cette montagne sont postées chaque jour sur Instagram</p>
+                <div>
+                    <p><span>20 000</span> PHOTOS</p>
+                    <p>DE CETTE MONTAGNE</p>
+                    <p>SONT POSTEES CHAQUE JOUR</p>
+                    <p>SUR LES RESEAUX SOCIAUX</p>
+                </div>
+                <span></span>
                 <p>Vous voulez ajouter la vôtre ?</p>
             </div>
-            <div class="downArrow">
-                <i class="fas fa-arrow-down"></i>
-            </div>
+            <span class="triangleRose"></span>
+
         </header>
         <main>
-            <section class="intro">
+
+            <section class="intro triangleRose2">
                 <div>
-                    <h1>Chez Flintn’go nous avons décidé de vous proposer une aventure plus authentique</h1>
-                    <p>C’est l’occasion pour vous de pratiquer des activités loin de la foule en adoptant un comportement responsable</p>
+                    <h1><span>Chez</span><span><span class="blueText">FLINT</span><span class="purpleText">n</span><span class="pinkText">GO</span>,</span>
+                        nous vous proposons une aventure plus <span class="pinkText">authentique</span></h1>
+                    <p>C’est l’occasion pour vous de pratiquer des activités loin de la foule en adoptant un comportement <span class="blueText">responsable</span></p>
                 </div>
                 <a id="scrollToCta" href="#inscritpion">Découvrir</a>
             </section>
             <section class="threePartConcept">
                 <article id="firstPart">
-                    <span>1</span>
-                    <h2>Ressourcez vous loin de la foule</h2>
+                    <h2>RESSOURCEZ VOUS LOIN DE LA FOULE</h2>
                     <p>Découvrez de nombreuses activités de plein air dans des lieux naturels méconnus des touristes</p>
                 </article>
                 <article id="secondPart">
-                    <span>2</span>
-                    <h2>Un service personnalisé et responsable</h2>
+                    <h2>UN SERVICE PERSONNALISÉ ET RESPONSABLE</h2>
                     <p>Profitez d’une offre complète pour organiser votre sorties dans les valeurs de l’éco-responsabilité</p>
                 </article>
                 <article id="thirdPart">
-                    <span>3</span>
-                    <h2>Construisons ensemble</h2>
+                    <h2>CONSTRUISONS ENSEMBLE</h2>
                     <p>Partagez vos connaissances et vos endroits favoris avec la communauté du grand air</p>
                 </article>
             </section>
-            <section id="inscritpion" onclick={closeSocial()}>
-                <h4>Envie d'en savoir plus ?</h4>
-                <p>Abonnez-vous à la newletter et nous vous tiendront informés de la sortie et des nouveautés de Flint'n'go.</p>
+            <section id="inscritpion" class="triangleBleu">
+                <h4>ENVIE D'EN SAVOIR PLUS ?</h4>
+                <div>
+                    <p>Abonnez-vous à la newletter et nous vous tiendront informés de la sortie et des nouveautés de</p>
+                    <p><span class="blueText">FLINT</span><span class="purpleText">n</span><span class="pinkText">GO</span>.</p>
+                </div>
                 <p id="errorMessage"></p>
                 <p id="validMessage"></p>
                 <form method="post" action="./includes/subscribeNL.php" id="formmailchimp">
-                    <label tabindex="0" class="label-checkbox">
-                        <input type="checkbox" name="consent">
+                    <input id="checkboxConsent" type="checkbox" name="consent">
+                    <label id="customCB" for="checkboxConsent" tabindex="0" class="label-checkbox">
+                        <span></span>
                         <span>
                             Mon adresse e-mail sera utilisée pour m'informer du lancement de Flint'n'Go.
                             <br>Elle ne sera pas partagée avec un tiers.
                         </span>
                     </label>
-                    <div>
-                        <label for="email" class="screen-reader-text">
-                            Votre e-mail
-                        </label>
-                        <input id="email" name="mail" type="email" placeholder="Votre adresse mail">
-                        <input name="submit" type="submit" value="Envoyer">
-                    </div>
-                </form>
-                <div class="socialNetworks">
-                    <p>
-                        Rejoignez-nous ici !
-                    </p>
-                    <div>
-                        <!-- Facebook -->
-                        <a href="http://bit.ly/2Kuv36M" target="_blank" title="Voir notre Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                            <span>Facebook</span>
-                        </a>
-                        <!-- Twitter -->
-                        <a href="http://bit.ly/2x4kZc2" target="_blank" title="Voir notre Twitter" rel="noopener">
-                            <i class="fab fa-twitter"></i>
-                            <span>Twitter</span>
-                        </a>
-                        <!-- LinkedIn -->
-                        <a href="http://bit.ly/31KLu4d" target="_blank" title="Voir notre LinkedIn" rel="noopener">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <!-- Insta -->
-                        <a href="http://bit.ly/2WXozyY" target="_blank" title="Voir notre Instagram" rel="noopener">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
+                    <input id="email" name="mail" type="email" placeholder="Votre adresse mail">
+                    <label for="email" class="screen-reader-text">
+                        Votre e-mail
+                    </label>
+                    <input name="submit" type="submit" value="Envoyer">
 
+                </form>
+            </section>
+            <section class="socialNetworks">
+                <p>
+                    Rejoignez-nous ici !
+                </p>
+                <div>
+                    <!-- Facebook -->
+                    <a href="http://bit.ly/2Kuv36M" target="_blank" title="Voir notre Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="http://bit.ly/2x4kZc2" target="_blank" title="Voir notre Twitter" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="http://bit.ly/31KLu4d" target="_blank" title="Voir notre LinkedIn" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
             </section>
         </main>
         <footer id="footer">
-            <h5>Partagez avec vos amis</h5>
-            <button class="socialButton" id="share-button" onClick={triggerSocial()}>
-                <i class="fas fa-share-alt"></i>
-            </button>
-            <a id="facebookButton" class="socialButton" target="_blank" rel="noopener"
-                href="https://www.facebook.com/sharer/sharer.php?u=https://flintngo.fr">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a id="twitterButton" class="socialButton" target="_blank" rel="noopener"
-               href="https://twitter.com/intent/tweet?text=https://flintngo.fr">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a id="linkedinButton" class="socialButton" target="_blank" rel="noopener"
-               href="https://www.linkedin.com/shareArticle?mini=true&url=https://flintngo.fr">
-                <i class="fab fa-linkedin"></i>
-            </a>
             <div>
                 <div>
-                    <a class="link-blue" href="mentions_legales.php" target="_blank" title="Consulter les mentions légales">Mentions légales</a>
-                    <a class="link-blue" href="dossier_presse.php" target="_blank" title="Télécharger le dossier de presse">Dossier presse</a>
+                    <div>
+                        <a class="link-blue" href="mentions_legales.php" target="_blank" title="Consulter les mentions légales">Mentions légales</a>
+                        <a class="link-blue" href="dossier_presse.php" target="_blank" title="Télécharger le dossier de presse">Dossier presse</a>
+                    </div>
+                    <span>©Flint'n'Go 2019 - tout droits réservés</span>
                 </div>
-                <span>©Flint'n'Go 2019 - tout droits réservés</span>
             </div>
+
         </footer>
        <script src="assets/js/script.js"></script>
        <script src="assets/js/ajax.js"></script>
