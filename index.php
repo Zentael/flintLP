@@ -46,7 +46,7 @@
                         "background": "#000"
                     },
                     "button": {
-                        "background": "#e8963c"
+                        "background": "#9fd6e5"
                     }
                 },
                 "theme": "edgeless",
@@ -78,30 +78,54 @@
                 <p>Vous voulez ajouter la vôtre ?</p>
             </div>
             <span class="triangleRose"></span>
-
+            <div class="downArrow">
+                <i class="fas fa-arrow-down"></i>
+            </div>
         </header>
         <main>
 
             <section class="intro triangleRose2">
-                <div>
-                    <h1><span>Chez</span><span><span class="blueText">FLINT</span><span class="purpleText">n</span><span class="pinkText">GO</span>,</span>
-                        nous vous proposons une aventure plus <span class="pinkText">authentique</span></h1>
-                    <p>C’est l’occasion pour vous de pratiquer des activités loin de la foule en adoptant un comportement <span class="blueText">responsable</span></p>
-                </div>
-                <a id="scrollToCta" href="#inscritpion">Découvrir</a>
+                <div></div>
+                <h1><span>Chez</span><span><span class="blueText">FLINT</span><span class="purpleText">n</span><span class="pinkText">GO</span>,</span>
+                    nous vous proposons une aventure plus <span class="pinkText">authentique</span></h1>
+                <p>C’est l’occasion pour vous de pratiquer des activités loin de la foule en adoptant un comportement <span class="blueText">responsable</span></p>
+                <div></div>
+                <a id="scrollToCta" href="#socialNetworks">Découvrir</a>
             </section>
             <section class="threePartConcept">
-                <article id="firstPart">
-                    <h2>RESSOURCEZ VOUS LOIN DE LA FOULE</h2>
-                    <p>Découvrez de nombreuses activités de plein air dans des lieux naturels méconnus des touristes</p>
+                <article>
+                    <div class="card">
+                        <div id="firstPart" class="recto">
+                            <h2>RESSOURCEZ VOUS LOIN DE LA FOULE</h2>
+                            <p>Découvrez de nombreuses activités de plein air dans des lieux naturels méconnus des touristes</p>
+                        </div>
+                        <div id="flip1" class="verso">
+                            <p>Découvrez de nombreuses activités de plein air dans des lieux naturels méconnus des touristes</p>
+                        </div>
+                    </div>
                 </article>
-                <article id="secondPart">
-                    <h2>UN SERVICE PERSONNALISÉ ET RESPONSABLE</h2>
-                    <p>Profitez d’une offre complète pour organiser votre sorties dans les valeurs de l’éco-responsabilité</p>
+                <article>
+                    <div class="card">
+                        <div id="secondPart" class="recto">
+                            <h2>UN SERVICE PERSONNALISÉ ET RESPONSABLE</h2>
+                            <p>Profitez d’une offre complète pour organiser votre sorties dans les valeurs de l’éco-responsabilité</p>
+                        </div>
+                        <div id="flip2" class="verso">
+                            <p>Profitez d’une offre complète pour organiser votre sorties dans les valeurs de l’éco-responsabilité</p>
+                        </div>
+                    </div>
                 </article>
-                <article id="thirdPart">
-                    <h2>CONSTRUISONS ENSEMBLE</h2>
-                    <p>Partagez vos connaissances et vos endroits favoris avec la communauté du grand air</p>
+                <article>
+                    <div class="card">
+                        <div id="thirdPart" class="recto">
+                            <h2>CONSTRUISONS ENSEMBLE</h2>
+                            <p>Partagez vos connaissances et vos endroits favoris avec la communauté du grand air</p>
+                        </div>
+                        <div id="flip3" class="verso">
+                            <p>Partagez vos connaissances et vos endroits favoris avec la communauté du grand air</p>
+                        </div>
+                    </div>
+
                 </article>
             </section>
             <section id="inscritpion" class="triangleBleu">
@@ -129,7 +153,7 @@
 
                 </form>
             </section>
-            <section class="socialNetworks">
+            <section id="socialNetworks">
                 <p>
                     Rejoignez-nous ici !
                 </p>
@@ -154,13 +178,37 @@
                 <div>
                     <div>
                         <a class="link-blue" href="mentions_legales.php" target="_blank" title="Consulter les mentions légales">Mentions légales</a>
-                        <a class="link-blue" href="dossier_presse.php" target="_blank" title="Télécharger le dossier de presse">Dossier presse</a>
+                        <a id="pressBtn" href="" class="link-blue" title="Télécharger le dossier de presse">Dossier presse</a>
                     </div>
                     <span>©Flint'n'Go 2019 - tout droits réservés</span>
                 </div>
             </div>
-
+            <div id='modal-wrapper'>
+                <div id='modal-box'>
+                    <div class='modal-content'>
+                        <button id='close-modal'>
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                        <form method="post" action="./includes/subscribeNL.php" id="formmailchimp">
+                            <input id="checkboxConsent" type="checkbox" name="consent">
+                            <label id="customCB" for="checkboxConsent" tabindex="0" class="label-checkbox">
+                                <span></span>
+                                <span>
+                            Mon adresse e-mail sera utilisée pour m'informer du lancement de Flint'n'Go.
+                            <br>Elle ne sera pas partagée avec un tiers.
+                        </span>
+                            </label>
+                            <input id="email" name="mail" type="email" placeholder="Votre adresse mail">
+                            <label for="email" class="screen-reader-text">
+                                Votre e-mail
+                            </label>
+                            <input name="submit" type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </footer>
+
        <script src="assets/js/script.js"></script>
        <script src="assets/js/ajax.js"></script>
     </body>
