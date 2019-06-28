@@ -66,7 +66,6 @@ header {
     overflow: hidden;
 }
 
-
 @media screen and (max-width: 1400px) {
     header {
         background-size: 130%;
@@ -197,10 +196,10 @@ header .downArrow {
 
 @keyframes bounce {
     from {
-        margin-top: calc(100vh - 150px);
+        margin-top: calc(90vh - 150px);
     }
     to {
-        margin-top: calc(100vh - 155px);
+        margin-top: calc(90vh - 155px);
     }
 }
 
@@ -463,6 +462,10 @@ section.intro a {
         transform: rotateY(180deg);
     }
 
+    .recto p{
+        display:none;
+    }
+
     .verso{
         background-color: #000;
         background-size:contain;
@@ -609,6 +612,10 @@ section.intro a {
 
 #inscritpion form input[type="checkbox"] {
     display: none;
+}
+
+.label-checkbox{
+    margin: 20px 0 30px;
 }
 
 #inscritpion form span:first-of-type {
@@ -779,10 +786,6 @@ footer h5 {
     margin: 20px 0 0;
 }
 
-footer div div div {
-    margin-bottom: 10px;
-}
-
 .link-blue, footer span {
     color: #fff;
     margin: 0 10px;
@@ -812,13 +815,55 @@ footer span {
 
 #modal-box {
     margin: 10vh auto;
-    background-color: #000;
-    border-radius: 14px;
+    background-color: #081519;
     opacity: 1;
     width: 80vw;
     height: 80vh;
-    padding-top: 40px;
+}
 
+#modal-box img:nth-child(2){
+    width:50px;
+    margin: 25px 0;
+}
+
+#modal-box > div:nth-child(3){
+    width:100%;
+    max-width: 500px;
+    background-image: url('../img/header.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:50px;
+    color: #fff;
+}
+
+#modal-box div:nth-child(3) h4{
+    font-size: 25px;
+}
+
+#modal-box form{
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#modal-box form input{
+    background-color: #000;
+    border-radius: 14px;
+    width:256px;
+    height:63px;
+    padding-left: 20px;
+    line-height: 63px;
+    border: 1px solid #e8a6c7;
 }
 
 #close-modal {
@@ -831,7 +876,6 @@ footer span {
     font-size: 30px;
     cursor: pointer;
 }
-
 
 .mentions_legales h2, .mentions_legales h3, .mentions_legales a {
     color: #E09E00;

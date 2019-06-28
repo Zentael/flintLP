@@ -138,16 +138,17 @@
                 <p id="validMessage"></p>
                 <form method="post" action="./includes/subscribeNL.php" id="formmailchimp">
                     <input id="checkboxConsent" type="checkbox" name="consent">
+
+                    <input id="email" name="mail" type="email" placeholder="Votre adresse mail">
+                    <label for="email" class="screen-reader-text">
+                        Votre e-mail
+                    </label>
                     <label id="customCB" for="checkboxConsent" tabindex="0" class="label-checkbox">
                         <span></span>
                         <span>
                             Mon adresse e-mail sera utilisée pour m'informer du lancement de Flint'n'Go.
                             <br>Elle ne sera pas partagée avec un tiers.
                         </span>
-                    </label>
-                    <input id="email" name="mail" type="email" placeholder="Votre adresse mail">
-                    <label for="email" class="screen-reader-text">
-                        Votre e-mail
                     </label>
                     <input name="submit" type="submit" value="Envoyer">
 
@@ -185,26 +186,39 @@
             </div>
             <div id='modal-wrapper'>
                 <div id='modal-box'>
-                    <div class='modal-content'>
                         <button id='close-modal'>
                             <i class="fas fa-times-circle"></i>
                         </button>
+                        <img alt="logo de FLINTnGO" src="./assets/img/logo.png"/>
+                        <div>
+                            <h4>Dossier de presse</h4>
+                            <p>Merci de nous échanger votre mail</p>
+                        </div>
                         <form method="post" action="./includes/subscribeNL.php" id="formmailchimp">
-                            <input id="checkboxConsent" type="checkbox" name="consent">
-                            <label id="customCB" for="checkboxConsent" tabindex="0" class="label-checkbox">
-                                <span></span>
+
+                            <div>
+                                <label for="entreprise">
+                                    Votre entreprise
+                                </label>
+                                <input id="entreprise" name="entreprise" type="text" placeholder="Votre entreprise">
+                            </div>
+                            <div>
+                                <label for="email">
+                                    Votre e-mail
+                                </label>
+                                <input id="emailPresse" name="mail" type="email" placeholder="Votre adresse mail">
+                            </div>
+                            <div>
+                                <input id="checkboxConsentPresse" type="checkbox" name="consent">
+                                <label id="customCBPresse" for="checkboxConsent" tabindex="0" class="label-checkbox">
                                 <span>
                             Mon adresse e-mail sera utilisée pour m'informer du lancement de Flint'n'Go.
                             <br>Elle ne sera pas partagée avec un tiers.
-                        </span>
-                            </label>
-                            <input id="email" name="mail" type="email" placeholder="Votre adresse mail">
-                            <label for="email" class="screen-reader-text">
-                                Votre e-mail
-                            </label>
+                                </span>
+                                </label>
+                            </div>
                             <input name="submit" type="submit" value="Envoyer">
                         </form>
-                    </div>
                 </div>
             </div>
         </footer>
